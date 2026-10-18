@@ -145,11 +145,24 @@
       "defi": "",
       "solution": "",
       "galerie": [],
-      "resultats": [],
-      "maitreOuvrage": "",
-      "duree": "",
-      "expertises": [],
-      "normes": []
+      "resultats": [
+        {
+          "valeur": "100",
+          "texte": "eee"
+        },
+        {
+          "valeur": "ddd",
+          "texte": "ddd"
+        }
+      ],
+      "maitreOuvrage": "sss",
+      "duree": "sss",
+      "expertises": [
+        "dddd"
+      ],
+      "normes": [
+        "dddd"
+      ]
     },
     {
       "titre": "Tour de Bureaux - La Défense",
