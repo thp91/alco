@@ -145,16 +145,7 @@
       "defi": "",
       "solution": "",
       "galerie": [],
-      "resultats": [
-        {
-          "valeur": "100",
-          "texte": "eee"
-        },
-        {
-          "valeur": "ddd",
-          "texte": "ddd"
-        }
-      ],
+      "resultats": [],
       "maitreOuvrage": "sss",
       "duree": "sss",
       "expertises": [
