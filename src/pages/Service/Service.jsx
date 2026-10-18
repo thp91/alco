@@ -1,12 +1,14 @@
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useContenu } from '../../cms/ContentProvider';
 import Editable from '../../cms/Editable';
 import RichText from '../../cms/RichText';
+import { texteBrut } from '../../cms/texte';
 import CtaBanner from '../../components/CtaBanner/CtaBanner';
 import Faq from '../../components/Faq/Faq';
 import Icon from '../../components/Icon/Icon';
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import Testimonials from '../../components/Testimonials/Testimonials';
+import NotFound from '../NotFound/NotFound';
 import './Service.css';
 
 function Service() {
@@ -14,7 +16,7 @@ function Service() {
   const services = useContenu('services');
   const index = services.findIndex((page) => page.slug === slug);
 
-  if (index === -1) return <Navigate to="/" replace />;
+  if (index === -1) return <NotFound />;
 
   const page = services[index];
   const base = `services.${index}`;
@@ -23,7 +25,12 @@ function Service() {
   return (
     <>
       <section className="page-hero">
-        <img className="page-hero__image" src={hero.image} alt="" />
+        <img
+          className="page-hero__image"
+          src={hero.image}
+          alt={`${texteBrut(hero.titre)} : intervention d’un cordiste Alco’rope`}
+          fetchPriority="high"
+        />
         <Editable as="div" className="page-hero__overlay" path={`${base}.hero.image`} image aria-hidden="true" />
         <div className="page-hero__ascender" aria-hidden="true">
           <span className="page-hero__ascender-dot" />
@@ -57,7 +64,7 @@ function Service() {
                 <li className={`strengths__item${item.image ? '' : ' strengths__item--icon'}`} key={i}>
                   <Editable as="div" className="strengths__media" path={`${chemin}.image`} image>
                     {item.image ? (
-                      <img className="strengths__image" src={item.image} alt="" loading="lazy" />
+                      <img className="strengths__image" src={item.image} alt={item.titre} loading="lazy" />
                     ) : (
                       <Icon name={item.icone} className="strengths__icon" size={56} />
                     )}

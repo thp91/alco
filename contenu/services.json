@@ -1,6 +1,10 @@
 [
   {
     "slug": "cordiste",
+    "seo": {
+      "titre": "Cordiste en Île-de-France — travaux sur cordes | Alco’rope",
+      "description": "Cordistes certifiés en Île-de-France : interventions en hauteur sans échafaudage pour la construction, la rénovation, la maintenance et l’inspection."
+    },
     "menu": {
       "titre": "Cordiste",
       "icone": "engineering"
@@ -9,7 +13,7 @@
       "surtitre": "Service",
       "titre": "*Cordiste*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/similar-aquatique.jpg"
+      "image": "/images/similar-aquatique.webp"
     },
     "raisons": {
       "titre": "3 raisons de faire appel à *Alco’rope*",
@@ -37,7 +41,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Les travaux sur cordes permettent d’intervenir là où les autres méthodes ne passent pas. Nos techniciens qualifiés utilisent des techniques de progression et de sécurité empruntées à l’alpinisme, pour réaliser des travaux de construction, rénovation, maintenance ou inspection.",
-      "image": "/images/service-cordiste.jpg",
+      "image": "/images/service-cordiste.webp",
       "imageAlt": "Cordiste en intervention sur un silo industriel",
       "carteTitre": "",
       "carteTexte": "",
@@ -93,6 +97,10 @@
   },
   {
     "slug": "ravalement-de-facade",
+    "seo": {
+      "titre": "Ravalement de façade par cordistes en Île-de-France | Alco’rope",
+      "description": "Ravalement de façade sur cordes, sans échafaudage : nettoyage, traitement des fissures et finitions adaptées à la pierre, au crépi et au béton."
+    },
     "menu": {
       "titre": "Ravalement de façade",
       "icone": "formatPaint"
@@ -101,7 +109,7 @@
       "surtitre": "Service",
       "titre": "Ravalement\n*de façade*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/project-haussmann.jpg"
+      "image": "/images/project-haussmann.webp"
     },
     "raisons": {
       "titre": "3 raisons de faire appel à *Alco’rope*",
@@ -129,7 +137,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Chez Alcorope, le ravalement est effectué par cordage, évitant ainsi le montage d’échafaudages coûteux. Nous traitons les pathologies (fissures, encrassement, usure), puis nous appliquons les traitements et finitions adaptés à chaque type de façade.",
-      "image": "/images/service-ravalement.jpg",
+      "image": "/images/service-ravalement.webp",
       "imageAlt": "Façade en pierre en cours de ravalement",
       "carteTitre": "",
       "carteTexte": "",
@@ -185,6 +193,10 @@
   },
   {
     "slug": "etancheite-toiture",
+    "seo": {
+      "titre": "Étanchéité de toiture et terrasse par cordistes | Alco’rope",
+      "description": "Recherche de fuites et étanchéité de toitures et terrasses sans nacelle : membranes, résines et réparations ciblées par des cordistes qualifiés."
+    },
     "menu": {
       "titre": "Étanchéité & toiture",
       "icone": "waterDrop"
@@ -193,7 +205,7 @@
       "surtitre": "Service",
       "titre": "Étanchéité\n*& toiture*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/project-defense.jpg"
+      "image": "/images/project-defense.webp"
     },
     "raisons": {
       "titre": "3 raisons de faire appel à *Alco’rope*",
@@ -221,7 +233,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Nous traitons les infiltrations sur tous types de toitures et terrasses. Nos cordistes assurent un diagnostic complet, la préparation du support, puis appliquent les traitements ou revêtements étanches adaptés (résines, bitumes, joints…).",
-      "image": "/images/service-etancheite.jpg",
+      "image": "/images/service-etancheite.webp",
       "imageAlt": "Couvreur en intervention sur une toiture en tuiles",
       "carteTitre": "",
       "carteTexte": "",
@@ -277,6 +289,10 @@
   },
   {
     "slug": "securite-en-hauteur",
+    "seo": {
+      "titre": "Sécurité en hauteur : lignes de vie, garde-corps | Alco’rope",
+      "description": "Installation de lignes de vie, filets, garde-corps et points d’ancrage conformes aux normes, contrôle de conformité et formation de vos équipes."
+    },
     "menu": {
       "titre": "Sécurité en hauteur",
       "icone": "shield"
@@ -285,25 +301,25 @@
       "surtitre": "Service",
       "titre": "Sécurité en\n*hauteur*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/securite-hero.jpg"
+      "image": "/images/securite-hero.webp"
     },
     "raisons": {
       "titre": "3 raisons de choisir *Alco’rope*",
       "liste": [
         {
-          "image": "/images/securite-reason-1.jpg",
+          "image": "/images/securite-reason-1.webp",
           "icone": "",
           "titre": "Interventions sur structures sensibles",
           "texte": "Solutions conformes aux normes françaises et européennes."
         },
         {
-          "image": "/images/securite-reason-2.jpg",
+          "image": "/images/securite-reason-2.webp",
           "icone": "",
           "titre": "Méthodes adaptées à chaque support",
           "texte": "Haute pression, brossage, démoussage ou mousse active."
         },
         {
-          "image": "/images/securite-reason-3.jpg",
+          "image": "/images/securite-reason-3.webp",
           "icone": "",
           "titre": "Pas d’interruption de site",
           "texte": "Pas de nacelle ni échafaudage = activité maintenue."
@@ -313,7 +329,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Nous réalisons tous types de nettoyage technique en hauteur, même sur des structures complexes ou fragiles. Nous adaptons notre méthode selon les matériaux et l’environnement du site (industriel, résidentiel, public…).",
-      "image": "/images/securite-approach.jpg",
+      "image": "/images/securite-approach.webp",
       "imageAlt": "Cordiste installant une ligne de vie en toiture",
       "carteTitre": "Précision technique",
       "carteTexte": "Chaque point d’ancrage est calculé pour résister aux forces dynamiques extrêmes.",
@@ -357,6 +373,10 @@
   },
   {
     "slug": "peinture-bardage",
+    "seo": {
+      "titre": "Peinture et bardage en hauteur par cordistes | Alco’rope",
+      "description": "Peinture de façades et rénovation de bardages métalliques, bois ou béton en hauteur, sans échafaudage : préparation, anticorrosion et finitions."
+    },
     "menu": {
       "titre": "Peinture & bardage",
       "icone": "paintRoller"
@@ -365,7 +385,7 @@
       "surtitre": "Service",
       "titre": "Peinture\n*& bardage*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/project-havre.jpg"
+      "image": "/images/project-havre.webp"
     },
     "raisons": {
       "titre": "3 raisons de faire appel à *Alco’rope*",
@@ -393,7 +413,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Nous rénovons et protégeons vos façades et bardages avec des produits adaptés. Après nettoyage et préparation des surfaces, nous appliquons les peintures ou traitements avec rigueur pour un résultat net et durable.",
-      "image": "/images/service-peinture.jpg",
+      "image": "/images/service-peinture.webp",
       "imageAlt": "Cordistes peignant un mur intérieur de grande hauteur",
       "carteTitre": "",
       "carteTexte": "",
@@ -449,6 +469,10 @@
   },
   {
     "slug": "nettoyage-technique",
+    "seo": {
+      "titre": "Nettoyage technique en hauteur par cordistes | Alco’rope",
+      "description": "Démoussage et nettoyage haute pression de façades, verrières, silos et structures métalliques par cordistes, sans interrompre votre activité."
+    },
     "menu": {
       "titre": "Nettoyage technique",
       "icone": "cleaning"
@@ -457,7 +481,7 @@
       "surtitre": "Service",
       "titre": "Nettoyage\n*technique*",
       "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
-      "image": "/images/detail-gallery-1.jpg"
+      "image": "/images/detail-gallery-1.webp"
     },
     "raisons": {
       "titre": "3 raisons de faire appel à *Alco’rope*",
@@ -485,7 +509,7 @@
     "approche": {
       "titre": "Notre\n*approche*",
       "texte": "Nous réalisons tous types de nettoyage technique en hauteur, même sur des structures complexes ou fragiles. Nous adaptons notre méthode selon les matériaux et l’environnement du site (industriel, résidentiel, public…).",
-      "image": "/images/service-nettoyage.jpg",
+      "image": "/images/service-nettoyage.webp",
       "imageAlt": "Cordiste nettoyant la façade vitrée d’une tour",
       "carteTitre": "",
       "carteTexte": "",

@@ -1,11 +1,16 @@
 {
+  "seo": {
+    "titre": "Alco’rope — Cordistes et travaux en hauteur en Île-de-France",
+    "description": "Cordistes en Île-de-France : travaux en hauteur, ravalement, étanchéité, sécurité, peinture et nettoyage technique sans échafaudage. Devis gratuit sous 48 h."
+  },
   "hero": {
     "badge": "Expertise verticale & rénovation",
     "titre": "Travailler là où\nles autres *ne peuvent*",
     "texte": "Basée en Île-de-France, Alco’Rope est spécialisée dans les travaux en hauteur et la rénovation du bâti. Nos équipes interviennent en toute sécurité sur les chantiers les plus exigeants, en France et dans les pays limitrophes.",
     "boutonPrincipal": "Nos services",
     "boutonSecondaire": "Notre expertise",
-    "image": "/images/home-hero.jpg"
+    "image": "/images/home-hero.webp",
+    "imageAlt": "Deux cordistes Alco’rope en intervention sur une façade"
   },
   "services": {
     "titre": "Maîtrise technique\n& *polyvalence*",
@@ -56,7 +61,7 @@
       "Installée en Île-de-France, Alco’Rope est une entreprise à taille humaine spécialisée dans les travaux d’accès difficile et les interventions techniques sur cordes. Grâce à une équipe de professionnels qualifiés et passionnés, nous réalisons des prestations de qualité dans toute la France, ainsi que dans les pays limitrophes comme la Belgique et le Luxembourg.",
       "Notre savoir-faire allie sécurité, efficacité et réactivité, pour répondre aux exigences des professionnels comme des particuliers."
     ],
-    "image": "/images/home-about.jpg",
+    "image": "/images/home-about.webp",
     "imageAlt": "Cordistes Alco'rope en intervention sur une façade",
     "chiffre": "25+",
     "chiffreLibelle": "Années d’expertise"

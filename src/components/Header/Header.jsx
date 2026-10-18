@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 import { useContenu } from '../../cms/ContentProvider';
 import { navLinks } from '../../data/navigation';
 import Button from '../Button/Button';

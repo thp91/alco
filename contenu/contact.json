@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "titre": "Contact et devis gratuit — cordistes | Alco’rope",
+    "description": "Demandez un devis gratuit pour vos travaux en hauteur en Île-de-France et partout en France : réponse technique de nos chargés d’affaires sous 48 h."
+  },
   "hero": {
     "badge": "Expertise verticale",
     "titre": "Précision au\n*sommet*.",
@@ -20,7 +24,7 @@
     "confirmation": "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 48h."
   },
   "coordonnees": {
-    "image": "/images/contact-map.jpg",
+    "image": "/images/contact-map.webp",
     "imageAlt": "Plan d’accès au siège d’Alco'rope",
     "telephoneTitre": "Appelez-nous",
     "emailTitre": "Email",

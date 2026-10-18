@@ -105,3 +105,9 @@
     max-width: none;
   }
 }
+
+@media (max-width: 768px) {
+  .cta-banner__phone {
+    padding-block: 12px;
+  }
+}

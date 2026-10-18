@@ -70,7 +70,7 @@ function Realisations() {
                     key={projet.slug}
                   >
                     <Editable as="div" className="project-card__media" path={`${chemin}.image`} image>
-                      <img className="project-card__image" src={projet.image} alt="" loading="lazy" />
+                      <img className="project-card__image" src={projet.image} alt={`Chantier ${projet.titre}`} loading="lazy" />
                     </Editable>
                     <div className="project-card__body">
                       <Editable as="p" className="project-card__category" path={`${chemin}.categorie`}>

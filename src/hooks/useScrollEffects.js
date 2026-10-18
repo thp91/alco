@@ -48,9 +48,14 @@ const MAX_STAGGER_STEPS = 5;
 function setupReveal(root) {
   const elements = [];
 
+  // Les blocs du premier écran sont déjà affichés (HTML pré-généré) : on ne les
+  // anime pas, sinon ils disparaîtraient puis réapparaîtraient.
+  const premierEcran = window.innerHeight * 0.9;
+
   REVEAL_TARGETS.forEach(([selector, type]) => {
     root.querySelectorAll(selector).forEach((element) => {
       if (element.dataset.reveal) return;
+      if (element.getBoundingClientRect().top + window.scrollY < premierEcran) return;
       element.dataset.reveal = type;
       elements.push(element);
     });

@@ -1,0 +1,66 @@
+{
+  "mentions": {
+    "titre": "Mentions légales",
+    "miseAJour": "Octobre 2026",
+    "sections": [
+      {
+        "titre": "Éditeur du site",
+        "texte": "Le site alcorope.fr est édité par Alcorope, représentée par Filipe Da Coste.\n\n- Siège social : 56 rue du Martroy, 91100 Ballancourt, France\n- Téléphone : 06 64 20 82 10\n- E-mail : contact@alcorope.fr\n- Forme juridique et capital : [à compléter]\n- SIRET : [à compléter]\n- Numéro de TVA intracommunautaire : [à compléter]"
+      },
+      {
+        "titre": "Directeur de la publication",
+        "texte": "Filipe Da Coste, gérant d’Alcorope."
+      },
+      {
+        "titre": "Hébergement",
+        "texte": "Le site est hébergé par Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis — vercel.com."
+      },
+      {
+        "titre": "Propriété intellectuelle",
+        "texte": "L’ensemble des contenus de ce site (textes, photographies, logo, mise en page) est la propriété d’Alcorope ou de ses partenaires. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable."
+      },
+      {
+        "titre": "Données personnelles",
+        "texte": "Les informations transmises via le formulaire de contact sont traitées conformément à notre politique de confidentialité."
+      }
+    ]
+  },
+  "confidentialite": {
+    "titre": "Politique de confidentialité",
+    "miseAJour": "31/07/2025",
+    "sections": [
+      {
+        "titre": "",
+        "texte": "Chez Alcorope, la protection de vos données personnelles est une priorité. Cette politique de confidentialité vous informe sur la manière dont nous collectons, utilisons et protégeons les informations que vous nous fournissez via notre site internet www.alcorope.fr."
+      },
+      {
+        "titre": "1. Données collectées",
+        "texte": "Nous collectons uniquement les données nécessaires au traitement de votre demande via notre formulaire de contact :\n\n- Nom\n- Adresse e-mail\n- Statut : Particulier ou Professionnel\n- Message libre\n\nNous ne collectons pas de données sensibles ou de données liées à des comptes utilisateurs."
+      },
+      {
+        "titre": "2. Finalités du traitement",
+        "texte": "Les données collectées via le formulaire sont utilisées uniquement pour :\n\n- Répondre à votre demande de contact\n- Vous recontacter si nécessaire\n- Échanger dans le cadre d’un devis ou d’un futur chantier\n\nAucune donnée n’est utilisée à des fins commerciales ou transmise à des tiers sans votre consentement."
+      },
+      {
+        "titre": "3. Durée de conservation",
+        "texte": "Les données sont conservées pendant 12 mois à compter du dernier échange, sauf si vous demandez leur suppression plus tôt."
+      },
+      {
+        "titre": "4. Sécurité",
+        "texte": "Vos données sont protégées par des mesures techniques et organisationnelles appropriées, afin d’éviter toute perte, divulgation ou accès non autorisé. Le site est hébergé par Vercel Inc. (vercel.com)."
+      },
+      {
+        "titre": "5. Cookies",
+        "texte": "Le site n’utilise pas de cookies à visée publicitaire. Des cookies strictement nécessaires peuvent être utilisés pour garantir le bon fonctionnement du site. Si nous ajoutons des outils de mesure d’audience (type Google Analytics), un bandeau de consentement apparaîtra lors de votre première visite."
+      },
+      {
+        "titre": "6. Vos droits",
+        "texte": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :\n\n- Droit d’accès\n- Droit de rectification\n- Droit d’effacement\n- Droit d’opposition\n- Droit à la limitation du traitement\n\nPour exercer vos droits, contactez-nous à l’adresse : contact@alcorope.fr"
+      },
+      {
+        "titre": "7. Responsable du traitement",
+        "texte": "Le responsable du traitement des données est : Alcorope – Filipe Da Coste. Siège social : 56 rue du Martroy, 91100 Ballancourt."
+      }
+    ]
+  }
+}

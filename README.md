@@ -18,6 +18,9 @@ cp .env.example .env.local
 node scripts/creer-compte-admin.mjs   # puis coller l'entrée dans ADMIN_COMPTES
 ```
 
+`npm run build` produit le site de production dans `dist/` : build du site, rendu serveur,
+puis pré-génération de chaque page (cf. « SEO »).
+
 ## Structure
 
 ```
@@ -26,12 +29,14 @@ public/images/      Images du site ; uploads/ reçoit celles du back-office
 shared/schema.js    Schéma du contenu : formulaires du back-office ET validation serveur
 api/                Fonctions serverless (Vercel) : connexion, lecture, publication, images
 server/             Code serveur partagé par api/ : dépôt GitHub, stockage, session
-scripts/            creer-compte-admin.mjs
+scripts/            creer-compte-admin.mjs, prerendre.mjs (pages HTML, sitemap, robots, llms.txt)
 src/
   cms/              Lien entre le site et le contenu : ContentProvider, Editable, RichText, Bridge
   admin/            Back-office (chargé à part, uniquement sur /admin)
   components/       Blocs réutilisés (en-tête, pied de page, FAQ, avis…)
-  pages/            Pages du site
+  pages/            Pages du site (dont pages légales et 404)
+  seo/              Métadonnées de chaque page (title, description, Open Graph, Schema.org)
+  entry-server.jsx  Rendu HTML d'une page, utilisé par la pré-génération
 ```
 
 ## Back-office (`/admin`)
@@ -115,3 +120,46 @@ site sont refusées.
 `vercel.json` renvoie toutes les adresses du site vers l'application, sauf `/api/`.
 Le dépôt doit être relié au projet Vercel pour que chaque publication déclenche un
 déploiement.
+
+## SEO
+
+Le site est une application React, mais **chaque page est pré-générée en HTML complet au
+build** (`scripts/prerendre.mjs`). Google, les réseaux sociaux et les assistants IA lisent
+donc le vrai contenu ; React reprend ensuite la page dans le navigateur (hydratation).
+Une publication depuis le back-office relance le build : une nouvelle réalisation a
+aussitôt sa page, son image de partage et sa place dans le sitemap.
+
+| Point | Où |
+| --- | --- |
+| Title, meta description | `src/seo/metadonnees.js`. Pages principales : modifiables dans le back-office (section « Référencement Google ») ; sinon générées depuis le contenu |
+| Open Graph / Twitter | Même fichier. Une image 1200 × 630 (JPEG) est générée par page dans `/og/` |
+| Canonical | Une par page, absente de la 404 |
+| Schema.org (JSON-LD) | `GeneralContractor` (entreprise) partout, `WebSite`, `Service`, `FAQPage`, `BreadcrumbList`, `ItemList`, `CreativeWork`, `ContactPage` selon la page |
+| H1 / H2 / H3 | Un seul H1 par page, aucun niveau sauté (vérifié sur les pages générées) |
+| sitemap.xml, robots.txt, llms.txt | Générés au build à partir du contenu publié |
+| Images | WebP (photos) ; le back-office convertit en WebP les photos envoyées. Texte `alt` sur chaque image, chargement différé (`loading="lazy"`) sauf logo et image d'en-tête (`fetchpriority="high"`) |
+| 404 | `src/pages/NotFound` ; servie par Vercel avec le code 404 et `noindex` |
+| Redirections 301 | `vercel.json` (anciennes adresses WordPress, cf. ci-dessous) |
+
+L'adresse du site (`https://alcorope.fr` par défaut) se change avec la variable
+`VITE_SITE_URL`.
+
+### Redirections 301 (ancien site WordPress → nouveau site)
+
+Relevées dans le sitemap Yoast de l'ancien site. Chaque adresse est couverte avec et sans
+« / » final, en un seul saut.
+
+| Ancienne adresse | Nouvelle adresse |
+| --- | --- |
+| `/cordiste/` | `/services/cordiste` |
+| `/ravalement-de-facade/` | `/services/ravalement-de-facade` |
+| `/etancheite-toiture/` | `/services/etancheite-toiture` |
+| `/securite-en-hauteur/` | `/services/securite-en-hauteur` |
+| `/peinture-bardage/` | `/services/peinture-bardage` |
+| `/nettoyage-technique/` | `/services/nettoyage-technique` |
+| `/contact/`, `/mentions-legales/`, `/politique-de-confidentialite/` | même adresse sans « / » |
+| `/chantier-1/` (page de démonstration) | `/realisations` |
+| `/category/…` | `/realisations` |
+| `/bonjour-tout-le-monde/` (article par défaut), `/author/…`, `/feed/` | `/` |
+| `/services` | `/#services` |
+| Toute autre adresse avec « / » final | même adresse sans |

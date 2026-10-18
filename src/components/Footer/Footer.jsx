@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 import { useContenu } from '../../cms/ContentProvider';
 import Editable from '../../cms/Editable';
 import { lienTelephone } from '../../cms/format';
@@ -14,7 +14,10 @@ const footerNav = [
   { ...navLinks[3], label: 'Nous Contacter' },
 ];
 
-const legalLinks = ['Mentions Légales', 'Politique de Confidentialité', 'CGU'];
+const legalLinks = [
+  { label: 'Mentions Légales', to: '/mentions-legales' },
+  { label: 'Politique de Confidentialité', to: '/politique-de-confidentialite' },
+];
 
 function Footer() {
   const { coordonnees, piedDePage } = useContenu('general');
@@ -89,11 +92,14 @@ function Footer() {
         <div className="footer__column">
           <h2 className="footer__title">Informations</h2>
           <ul className="footer__list">
-            {legalLinks.map((label) => (
-              <li key={label}>
-                <a className="footer__link" href="#">
-                  {label}
-                </a>
+            {legalLinks.map((link) => (
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  className={({ isActive }) => `footer__link${isActive ? ' footer__link--active' : ''}`}
+                >
+                  {link.label}
+                </NavLink>
               </li>
             ))}
           </ul>

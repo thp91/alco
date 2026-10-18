@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navigate, useNavigate, useSearchParams } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 import { useSession } from '../AdminApp';
 import { api } from '../api';
 import './Connexion.css';

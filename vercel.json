@@ -1,4 +1,166 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/cordiste",
+      "destination": "/services/cordiste",
+      "statusCode": 301
+    },
+    {
+      "source": "/cordiste/",
+      "destination": "/services/cordiste",
+      "statusCode": 301
+    },
+    {
+      "source": "/ravalement-de-facade",
+      "destination": "/services/ravalement-de-facade",
+      "statusCode": 301
+    },
+    {
+      "source": "/ravalement-de-facade/",
+      "destination": "/services/ravalement-de-facade",
+      "statusCode": 301
+    },
+    {
+      "source": "/etancheite-toiture",
+      "destination": "/services/etancheite-toiture",
+      "statusCode": 301
+    },
+    {
+      "source": "/etancheite-toiture/",
+      "destination": "/services/etancheite-toiture",
+      "statusCode": 301
+    },
+    {
+      "source": "/securite-en-hauteur",
+      "destination": "/services/securite-en-hauteur",
+      "statusCode": 301
+    },
+    {
+      "source": "/securite-en-hauteur/",
+      "destination": "/services/securite-en-hauteur",
+      "statusCode": 301
+    },
+    {
+      "source": "/peinture-bardage",
+      "destination": "/services/peinture-bardage",
+      "statusCode": 301
+    },
+    {
+      "source": "/peinture-bardage/",
+      "destination": "/services/peinture-bardage",
+      "statusCode": 301
+    },
+    {
+      "source": "/nettoyage-technique",
+      "destination": "/services/nettoyage-technique",
+      "statusCode": 301
+    },
+    {
+      "source": "/nettoyage-technique/",
+      "destination": "/services/nettoyage-technique",
+      "statusCode": 301
+    },
+    {
+      "source": "/chantier-1",
+      "destination": "/realisations",
+      "statusCode": 301
+    },
+    {
+      "source": "/chantier-1/",
+      "destination": "/realisations",
+      "statusCode": 301
+    },
+    {
+      "source": "/bonjour-tout-le-monde",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/bonjour-tout-le-monde/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/mentions-legales/",
+      "destination": "/mentions-legales",
+      "statusCode": 301
+    },
+    {
+      "source": "/politique-de-confidentialite/",
+      "destination": "/politique-de-confidentialite",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/:chemin*",
+      "destination": "/realisations",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/:chemin*",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services",
+      "destination": "/#services",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/",
+      "destination": "/#services",
+      "statusCode": 301
+    },
+    {
+      "source": "/:chemin+/",
+      "destination": "/:chemin+",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "/app.html"
+    },
+    {
+      "source": "/admin/:chemin*",
+      "destination": "/app.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/admin/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
 }

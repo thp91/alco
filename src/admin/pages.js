@@ -14,7 +14,7 @@ export const PAGES = [
     chemin: '/',
     image: (c) => c.accueil?.hero.image,
     fichiers: ['accueil', 'general'],
-    sections: ['accueil.hero', 'accueil.services', 'accueil.expertise', 'accueil.raisons', 'accueil.faq', ...COMMUNES],
+    sections: ['accueil.hero', 'accueil.services', 'accueil.expertise', 'accueil.raisons', 'accueil.faq', ...COMMUNES, 'accueil.seo'],
   },
   ...services.map((service, index) => ({
     id: `service-${service.slug}`,
@@ -30,6 +30,7 @@ export const PAGES = [
       `services.${index}.faq`,
       `services.${index}.menu`,
       ...COMMUNES,
+      `services.${index}.seo`,
     ],
   })),
   {
@@ -38,7 +39,7 @@ export const PAGES = [
     chemin: '/realisations',
     image: (c) => c.realisations?.projets[0]?.image,
     fichiers: ['realisations', 'general'],
-    sections: ['realisations.page', 'realisations.categories', ...COMMUNES],
+    sections: ['realisations.page', 'realisations.categories', ...COMMUNES, 'realisations.seo'],
   },
   {
     id: 'fiche-realisation',
@@ -58,7 +59,25 @@ export const PAGES = [
     chemin: '/contact',
     image: (c) => c.contact?.coordonnees.image,
     fichiers: ['contact', 'general'],
-    sections: ['contact.hero', 'contact.formulaire', 'contact.coordonnees', 'general.coordonnees', 'general.piedDePage'],
+    sections: ['contact.hero', 'contact.formulaire', 'contact.coordonnees', 'general.coordonnees', 'general.piedDePage', 'contact.seo'],
+  },
+  {
+    id: 'mentions-legales',
+    titre: 'Mentions légales',
+    groupe: 'Informations',
+    chemin: '/mentions-legales',
+    image: () => null,
+    fichiers: ['legal', 'general'],
+    sections: ['legal.mentions', 'general.coordonnees', 'general.piedDePage'],
+  },
+  {
+    id: 'politique-de-confidentialite',
+    titre: 'Politique de confidentialité',
+    groupe: 'Informations',
+    chemin: '/politique-de-confidentialite',
+    image: () => null,
+    fichiers: ['legal', 'general'],
+    sections: ['legal.confidentialite', 'general.coordonnees', 'general.piedDePage'],
   },
 ];
 

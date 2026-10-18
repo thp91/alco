@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "titre": "Nos réalisations — chantiers de cordistes | Alco’rope",
+    "description": "Ravalement haussmannien, tours de bureaux, sites industriels : découvrez les chantiers en hauteur réalisés par les cordistes d’Alco’rope partout en France."
+  },
   "page": {
     "badge": "Portfolio industriel",
     "titre": "Nos\n*réalisations*",
@@ -55,19 +59,73 @@
         "nettoyage"
       ],
       "resume": "Restauration complète de pierre de taille sur 7 étages.",
-      "image": "/images/project-haussmann.jpg",
-      "surtitre": "",
-      "titreDetail": "",
-      "imageDetail": "",
-      "stats": [],
-      "defi": "",
-      "solution": "",
-      "galerie": [],
-      "resultats": [],
-      "maitreOuvrage": "",
-      "duree": "",
-      "expertises": [],
-      "normes": []
+      "image": "/images/project-haussmann.webp",
+      "surtitre": "Projet de ravalement",
+      "titreDetail": "Ravalement d’un immeuble haussmannien - Paris 8e",
+      "imageDetail": "/images/project-haussmann.webp",
+      "stats": [
+        {
+          "libelle": "Localisation",
+          "valeur": "Paris 8e",
+          "unite": "",
+          "accent": false
+        },
+        {
+          "libelle": "Hauteur de façade",
+          "valeur": "24",
+          "unite": "mètres",
+          "accent": true
+        },
+        {
+          "libelle": "Statut",
+          "valeur": "Livré en 2024",
+          "unite": "",
+          "accent": false
+        }
+      ],
+      "defi": "Cet immeuble haussmannien de 7 étages présentait une façade en pierre de taille fortement encrassée, des joints dégradés, des corniches fissurées avec un risque de chute de fragments sur le trottoir, et des garde-corps en fer forgé attaqués par la corrosion. La rue étroite, les commerces en pied d’immeuble et la copropriété occupée rendaient un échafaudage complet long à autoriser, coûteux et très contraignant pour les riverains.",
+      "solution": "Alco’rope a mobilisé une équipe de 6 cordistes, avec un accès par la toiture en zinc et un simple balisage du trottoir. La pierre a été nettoyée par hydrogommage basse pression, adapté au calcaire, puis les fissures purgées et reprises au mortier de chaux. Les modénatures ont été ragréées, les joints refaits, les ferronneries traitées contre la corrosion puis repeintes. Un hydrofuge respirant protège désormais la façade, sans que les commerces aient eu à fermer un seul jour.",
+      "galerie": [
+        {
+          "image": "/images/service-ravalement.webp",
+          "alt": "Façade en pierre encrassée et fissurée avant le ravalement"
+        },
+        {
+          "image": "/images/home-hero.webp",
+          "alt": "Cordistes Alco’rope en intervention sur la façade"
+        },
+        {
+          "image": "/images/securite-reason-2.webp",
+          "alt": "Cordiste préparant les ancrages avant intervention"
+        }
+      ],
+      "resultats": [
+        {
+          "valeur": "-35%",
+          "texte": "Économie réalisée par rapport à un échafaudage complet installé sur rue."
+        },
+        {
+          "valeur": "6",
+          "texte": "Semaines de chantier, sans fermeture des commerces en pied d’immeuble."
+        },
+        {
+          "valeur": "1800",
+          "texte": "Mètres carrés de pierre de taille nettoyés, restaurés et protégés."
+        }
+      ],
+      "maitreOuvrage": "Syndicat des copropriétaires (syndic professionnel)",
+      "duree": "6 semaines",
+      "expertises": [
+        "Travaux sur cordes (cordistes certifiés)",
+        "Hydrogommage basse pression",
+        "Restauration de pierre de taille",
+        "Traitement anticorrosion des ferronneries"
+      ],
+      "normes": [
+        "NF EN 795",
+        "Art. R4323-64",
+        "DTU 59.1"
+      ]
     },
     {
       "titre": "Site Logistique - Gennevilliers",
@@ -79,7 +137,7 @@
         "securite"
       ],
       "resume": "",
-      "image": "/images/project-gennevilliers.jpg",
+      "image": "/images/project-gennevilliers.webp",
       "surtitre": "",
       "titreDetail": "",
       "imageDetail": "",
@@ -104,10 +162,10 @@
         "ravalement"
       ],
       "resume": "",
-      "image": "/images/project-defense.jpg",
+      "image": "/images/project-defense.webp",
       "surtitre": "Projet de rénovation",
       "titreDetail": "Ravalement de façade sur cordes - Tour Défense",
-      "imageDetail": "/images/detail-hero.jpg",
+      "imageDetail": "/images/detail-hero.webp",
       "stats": [
         {
           "libelle": "Localisation",
@@ -132,15 +190,15 @@
       "solution": "Alco’rope a déployé une équipe de 12 techniciens cordistes certifiés IRATA. Nous avons mis en place un système de levage léger sur le toit-terrasse permettant d’acheminer le matériel sans bloquer les accès au rez-de-chaussée. L’intervention a combiné nettoyage haute pression à température régulée et réfection chirurgicale des mastics d’étanchéité, le tout en évoluant entre 80 et 180 mètres de hauteur.",
       "galerie": [
         {
-          "image": "/images/detail-gallery-1.jpg",
+          "image": "/images/detail-gallery-1.webp",
           "alt": "Cordiste en intervention sur la façade vitrée de la tour"
         },
         {
-          "image": "/images/detail-gallery-2.jpg",
+          "image": "/images/detail-gallery-2.webp",
           "alt": "Détail du nettoyage haute pression"
         },
         {
-          "image": "/images/detail-gallery-3.jpg",
+          "image": "/images/detail-gallery-3.webp",
           "alt": "Réfection des joints d’étanchéité"
         }
       ],
@@ -181,7 +239,7 @@
         "peinture"
       ],
       "resume": "",
-      "image": "/images/project-havre.jpg",
+      "image": "/images/project-havre.webp",
       "surtitre": "",
       "titreDetail": "",
       "imageDetail": "",

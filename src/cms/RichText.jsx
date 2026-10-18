@@ -30,7 +30,4 @@ function RichText({ text = '', accent = 'brown' }) {
   ));
 }
 
-/** Version texte brut d'un titre (attributs alt, title…). */
-export const texteBrut = (text = '') => String(text).replace(/\*/g, '').replace(/\n/g, ' ');
-
 export default RichText;

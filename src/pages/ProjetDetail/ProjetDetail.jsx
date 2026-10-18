@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useContenu } from '../../cms/ContentProvider';
 import { estModeEdition } from '../../cms/mode';
 import Editable from '../../cms/Editable';
@@ -8,6 +8,7 @@ import Button from '../../components/Button/Button';
 import CountUp from '../../components/CountUp/CountUp';
 import CtaBanner from '../../components/CtaBanner/CtaBanner';
 import Icon from '../../components/Icon/Icon';
+import NotFound from '../NotFound/NotFound';
 import './ProjetDetail.css';
 
 function ProjetDetail() {
@@ -20,7 +21,7 @@ function ProjetDetail() {
   // Dans l'aperçu du back-office, le brouillon (nouvelle réalisation) arrive juste après.
   if (!projet && estModeEdition()) return <p className="project-pending container">Chargement de l’aperçu…</p>;
   // Un brouillon n'est visible que dans l'aperçu du back-office.
-  if (!projet || (!projet.publie && !estModeEdition())) return <Navigate to="/realisations" replace />;
+  if (!projet || (!projet.publie && !estModeEdition())) return <NotFound />;
 
   const base = `realisations.projets.${index}`;
   const detaille = estDetaille(projet);
@@ -37,7 +38,12 @@ function ProjetDetail() {
   return (
     <>
       <section className="project-hero">
-        <img className="project-hero__image" src={projet.imageDetail || projet.image} alt="" />
+        <img
+          className="project-hero__image"
+          src={projet.imageDetail || projet.image}
+          alt={`Chantier ${projet.titre}`}
+          fetchPriority="high"
+        />
         <Editable
           as="div"
           className="project-hero__overlay"
@@ -255,7 +261,7 @@ function ProjetDetail() {
               {autres.map((item) => (
                 <li className="similar__item" key={item.slug}>
                   <Link to={`/realisations/${item.slug}`} className="similar__card">
-                    <img className="similar__image" src={item.image} alt="" loading="lazy" />
+                    <img className="similar__image" src={item.image} alt={`Chantier ${item.titre}`} loading="lazy" />
                     <span className="similar__overlay" aria-hidden="true" />
                     <span className="similar__caption">
                       <span className="similar__category">{item.categorie}</span>

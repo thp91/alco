@@ -125,3 +125,27 @@
     align-items: flex-start;
   }
 }
+
+/* Mobile : liens assez hauts pour le doigt, devise lisible */
+@media (max-width: 768px) {
+  .footer__list {
+    gap: 4px;
+  }
+
+  .footer__link {
+    display: inline-block;
+    padding-block: 10px;
+  }
+
+  .footer__contact {
+    align-items: center;
+  }
+
+  .footer__icon {
+    margin-top: 0;
+  }
+
+  .footer__motto {
+    font-size: 0.6875rem;
+  }
+}

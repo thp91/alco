@@ -1,4 +1,4 @@
-/** « 06 64 20 82 10 » ou « +33 (0)1 23 45 67 89 » → « tel:+33664208210 ». */
+/** « 06 64 20 82 10 » ou « +33 (0)6 64 20 82 10 » → « tel:+33664208210 ». */
 export function lienTelephone(numero = '') {
   let chiffres = String(numero).replace(/\(0\)/g, '').replace(/[^\d+]/g, '');
   if (chiffres.startsWith('0')) chiffres = `+33${chiffres.slice(1)}`;

@@ -9,9 +9,12 @@ import { useScrollEffects } from './hooks/useScrollEffects';
 import { destroySmoothScroll, initSmoothScroll, scrollToElement, scrollToTop } from './lib/smoothScroll';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
+import Legal from './pages/Legal/Legal';
+import NotFound from './pages/NotFound/NotFound';
 import ProjetDetail from './pages/ProjetDetail/ProjetDetail';
 import Realisations from './pages/Realisations/Realisations';
 import Service from './pages/Service/Service';
+import Seo from './seo/Seo';
 
 // Back-office : chargé à part, uniquement sur /admin.
 const AdminApp = lazy(() => import('./admin/AdminApp'));
@@ -37,6 +40,7 @@ function Layout() {
 
   return (
     <ContentProvider>
+      <Seo />
       <Bridge />
       <Header />
       <main>
@@ -65,13 +69,15 @@ function App() {
         <Route path="realisations" element={<Realisations />} />
         <Route path="realisations/:slug" element={<ProjetDetail />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="mentions-legales" element={<Legal cle="mentions" />} />
+        <Route path="politique-de-confidentialite" element={<Legal cle="confidentialite" />} />
 
-        {/* Anciennes URL de alcorope.fr (ex. /cordiste/) */}
+        {/* Anciennes URL de alcorope.fr (ex. /cordiste/) : en ligne, vercel.json répond par une 301. */}
         {servicePages.map((page) => (
           <Route key={page.slug} path={page.slug} element={<Navigate to={`/services/${page.slug}`} replace />} />
         ))}
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

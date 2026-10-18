@@ -45,6 +45,33 @@ const liste = (libelle, champs, options) => champ('liste', libelle, { champs, ..
 const faq = (libelle = 'Questions fréquentes') =>
   liste(libelle, { question: texte('Question'), reponse: long('Réponse') }, { nomElement: 'question', max: 20 });
 
+/** Titre et description affichés par Google (vides = générés automatiquement). */
+const seo = () =>
+  groupe('Référencement Google', {
+    titre: texte('Titre dans Google', {
+      optionnel: true,
+      aide: 'Environ 60 caractères. Vide : titre généré automatiquement.',
+    }),
+    description: long('Description dans Google', {
+      optionnel: true,
+      aide: 'Environ 155 caractères. Vide : début du texte de la page.',
+    }),
+  });
+
+const pageLegale = (libelle) =>
+  groupe(libelle, {
+    titre: texte('Titre'),
+    miseAJour: texte('Date de mise à jour'),
+    sections: liste(
+      'Paragraphes',
+      {
+        titre: texte('Intertitre', { optionnel: true }),
+        texte: long('Texte', { aide: 'Ligne commençant par « - » = puce. Ligne vide = nouveau paragraphe.' }),
+      },
+      { nomElement: 'paragraphe', max: 30 },
+    ),
+  });
+
 export const SCHEMA_PROJET = {
   titre: texte('Titre'),
   slug: slug('Adresse de la page', { aide: 'Utilisée dans l’URL : /realisations/…' }),
@@ -82,6 +109,7 @@ export const SCHEMA_PROJET = {
 
 const PAGE_SERVICE = {
   slug: slug('Adresse', { verrouille: true }),
+  seo: seo(),
   menu: groupe('Menu', { titre: texte('Nom dans le menu'), icone: icone('Icône') }),
   hero: groupe('En-tête', {
     surtitre: texte('Surtitre'),
@@ -154,6 +182,7 @@ export const SCHEMA = {
   }),
 
   accueil: groupe('Accueil', {
+    seo: seo(),
     hero: groupe('En-tête', {
       badge: texte('Badge'),
       titre: titre('Titre'),
@@ -161,6 +190,7 @@ export const SCHEMA = {
       boutonPrincipal: texte('Bouton principal'),
       boutonSecondaire: texte('Bouton secondaire'),
       image: image('Image de fond'),
+      imageAlt: texte('Description de l’image', { aide: 'Lue par Google et les lecteurs d’écran' }),
     }),
     services: groupe('Services', {
       titre: titre('Titre'),
@@ -193,6 +223,7 @@ export const SCHEMA = {
   services: liste('Pages services', PAGE_SERVICE, { fixe: true }),
 
   realisations: groupe('Réalisations', {
+    seo: seo(),
     page: groupe('Page Réalisations', {
       badge: texte('Badge'),
       titre: titre('Titre'),
@@ -218,7 +249,13 @@ export const SCHEMA = {
     projets: liste('Projets', SCHEMA_PROJET, { nomElement: 'projet', max: 200 }),
   }),
 
+  legal: groupe('Pages légales', {
+    mentions: pageLegale('Mentions légales'),
+    confidentialite: pageLegale('Politique de confidentialité'),
+  }),
+
   contact: groupe('Contact', {
+    seo: seo(),
     hero: groupe('En-tête', { badge: texte('Badge'), titre: titre('Titre'), texte: long('Texte') }),
     formulaire: groupe('Formulaire', {
       titre: texte('Titre'),

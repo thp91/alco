@@ -641,6 +641,35 @@
     display: none;
   }
 
+  .project-hero__title {
+    margin-bottom: 24px;
+  }
+
+  /* Chiffres de l'en-tête en grille de deux colonnes */
+  .project-hero__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(209, 228, 251, 0.15);
+  }
+
+  .project-hero__stat-value {
+    font-size: 1.125rem;
+    line-height: 26px;
+  }
+
+  .project-hero__stat-number {
+    font-size: 1.75rem;
+    line-height: 30px;
+  }
+
+  .similar__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
   .project-detail__main {
     gap: 56px;
   }
@@ -695,5 +724,15 @@
   .similar__track {
     grid-auto-columns: 80%;
     gap: 16px;
+  }
+}
+
+/* Mobile : petites étiquettes plus lisibles */
+@media (max-width: 768px) {
+  .project-hero__stat-label,
+  .project-sheet__label,
+  .project-sheet__tag,
+  .similar__category {
+    font-size: 0.6875rem;
   }
 }

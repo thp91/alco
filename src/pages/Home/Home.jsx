@@ -18,7 +18,12 @@ function Home() {
   return (
     <>
       <section className="home-hero">
-        <img className="home-hero__image" src={hero.image} alt="" />
+        <img
+          className="home-hero__image"
+          src={hero.image}
+          alt={hero.imageAlt}
+          fetchPriority="high"
+        />
         <Editable as="div" className="home-hero__overlay" path="accueil.hero.image" image aria-hidden="true" />
 
         <div className="home-hero__ascender" aria-hidden="true">

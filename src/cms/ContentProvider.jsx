@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import accueil from '../../contenu/accueil.json';
 import contact from '../../contenu/contact.json';
 import general from '../../contenu/general.json';
+import legal from '../../contenu/legal.json';
 import realisations from '../../contenu/realisations.json';
 import services from '../../contenu/services.json';
 import { estModeEdition } from './mode';
@@ -11,7 +12,7 @@ import { estModeEdition } from './mode';
  * Le site embarque la version du dernier build ; dans l'aperçu du back-office
  * (?edit, dans une iframe), le brouillon en cours de saisie la remplace en direct.
  */
-export const contenuEmbarque = { general, accueil, services, realisations, contact };
+export const contenuEmbarque = { general, accueil, services, realisations, contact, legal };
 
 const ContexteContenu = createContext(contenuEmbarque);
 
@@ -32,6 +33,11 @@ export function ContentProvider({ children }) {
   }, []);
 
   return <ContexteContenu.Provider value={contenu}>{children}</ContexteContenu.Provider>;
+}
+
+/** Tout le contenu (métadonnées SEO, routes). */
+export function useToutLeContenu() {
+  return useContext(ContexteContenu);
 }
 
 /** Contenu d'un fichier (« accueil », « general »…). */

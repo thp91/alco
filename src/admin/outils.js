@@ -35,17 +35,25 @@ export function remplacerImages(valeur, correspondances) {
   return valeur;
 }
 
-/** Réduit une photo à 2000 px de large au plus (JPEG) : envoi léger, rendu net. */
+/**
+ * Réduit une photo à 1920 px de large au plus et la convertit en WebP (format
+ * léger recommandé pour le web) ; JPEG si le navigateur ne sait pas encoder le WebP.
+ */
 export async function reduireImage(fichier) {
   const image = await createImageBitmap(fichier);
-  const echelle = Math.min(1, 2000 / image.width);
+  const echelle = Math.min(1, 1920 / image.width);
   const toile = document.createElement('canvas');
   toile.width = Math.round(image.width * echelle);
   toile.height = Math.round(image.height * echelle);
   toile.getContext('2d').drawImage(image, 0, 0, toile.width, toile.height);
-  const blob = await new Promise((ok) => toile.toBlob(ok, 'image/jpeg', 0.84));
+
+  const encoder = (type, qualite) => new Promise((ok) => toile.toBlob(ok, type, qualite));
+  let blob = await encoder('image/webp', 0.8);
+  if (!blob || blob.type !== 'image/webp') blob = await encoder('image/jpeg', 0.84);
   if (!blob) throw new Error('Image illisible');
-  return new File([blob], `${fichier.name.replace(/\.[^.]+$/, '')}.jpg`, { type: 'image/jpeg' });
+
+  const extension = blob.type === 'image/webp' ? 'webp' : 'jpg';
+  return new File([blob], `${fichier.name.replace(/\.[^.]+$/, '')}.${extension}`, { type: blob.type });
 }
 
 const formatDate = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });

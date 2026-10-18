@@ -12,13 +12,13 @@ function InterventionZone() {
       <div className="intervention-zone__inner container">
         <div className="intervention-zone__visual">
           <Editable as="div" className="intervention-zone__map" path="general.zone.image" image>
-            <img className="intervention-zone__map-image" src={zone.image} alt="Carte de France" loading="lazy" />
+            <img className="intervention-zone__map-image" src={zone.image} alt="Carte de la zone d’intervention d’Alco’rope en France" loading="lazy" />
             <span className="intervention-zone__node intervention-zone__node--north" />
             <span className="intervention-zone__node intervention-zone__node--west" />
             <span className="intervention-zone__node intervention-zone__node--south" />
           </Editable>
           <div className="intervention-zone__card">
-            <Editable as="h3" className="intervention-zone__card-title" path="general.zone.carteTitre">
+            <Editable as="p" className="intervention-zone__card-title" path="general.zone.carteTitre">
               {zone.carteTitre}
             </Editable>
             <Editable as="p" className="intervention-zone__card-text" path="general.zone.carteTexte">

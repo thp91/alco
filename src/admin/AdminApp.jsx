@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { Navigate, NavLink, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.webp';
 import { api } from './api';
 import { BrouillonsProvider, useBrouillons } from './Brouillons';
 import Connexion from './ecrans/Connexion';

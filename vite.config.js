@@ -65,4 +65,6 @@ function apiEnDeveloppement() {
 
 export default defineConfig({
   plugins: [react(), apiEnDeveloppement()],
+  // Pré-génération : Lenis importe une feuille de style, à traiter par Vite.
+  ssr: { noExternal: ['lenis'] },
 });

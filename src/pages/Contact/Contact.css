@@ -343,3 +343,9 @@ a.contact-info__card:hover {
     grid-column: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-form__label {
+    font-size: 0.6875rem;
+  }
+}

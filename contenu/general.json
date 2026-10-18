@@ -9,7 +9,7 @@
     "titre": "Prêt pour votre\n*prochain projet ?*",
     "texte": "Nos experts étudient vos problématiques d’accès et vous proposent un devis détaillé sous 48h.",
     "bouton": "Obtenir un devis",
-    "telephone": "+33 (0)1 23 45 67 89"
+    "telephone": "06 64 20 82 10"
   },
   "avis": {
     "titre": "Les avis de *nos clients*",
@@ -33,7 +33,7 @@
   },
   "zone": {
     "titre": "Rayon\n*d’intervention*",
-    "image": "/images/map-france.jpg",
+    "image": "/images/map-france.webp",
     "carteTitre": "IDF & National",
     "carteTexte": "Basés à Paris, nous intervenons sur toute l’Île-de-France et les grandes métropoles françaises pour vos chantiers d’envergure.",
     "liste": [

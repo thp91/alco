@@ -46,7 +46,7 @@ export function BrouillonsProvider({ children }) {
   const annuler = useCallback(() => setBrouillons(publies), [publies]);
 
   const envoyerImage = useCallback(async (fichier) => {
-    const reduite = fichier.type === 'image/png' && fichier.size < 400_000 ? fichier : await reduireImage(fichier);
+    const reduite = await reduireImage(fichier);
     const { chemin, ref } = await api.envoyerImage(reduite);
     setImages((i) => ({ ...i, [chemin]: { ref, url: URL.createObjectURL(reduite) } }));
     return chemin;
