@@ -1,0 +1,299 @@
+/* ---------- Hero ---------- */
+.portfolio-hero {
+  position: relative;
+  padding-block: 80px 128px;
+  background-color: var(--color-surface);
+  overflow: hidden;
+}
+
+/* Trame de points décorative */
+.portfolio-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--color-brown) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.1;
+}
+
+.portfolio-hero__inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.portfolio-hero__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.portfolio-hero__badge {
+  padding: 4px 12px;
+  background-color: var(--color-orange);
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-on-orange);
+}
+
+.portfolio-hero__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-xl);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+.portfolio-hero__text {
+  max-width: 576px;
+  padding-top: 8px;
+  font-size: 1.125rem;
+  line-height: 29.25px;
+  color: var(--color-text);
+}
+
+.portfolio-hero__visual {
+  position: relative;
+  flex-shrink: 0;
+  width: min(405px, 33vw);
+  aspect-ratio: 1;
+}
+
+.portfolio-hero__frame {
+  position: absolute;
+  inset: 40px 40px -40px -40px;
+  border: 16px solid var(--color-light-blue);
+}
+
+.portfolio-hero__panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(144, 77, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.portfolio-hero__icon {
+  color: rgba(144, 77, 0, 0.3);
+}
+
+/* ---------- Galerie ---------- */
+.projects {
+  padding-block: var(--section-padding);
+  background-color: var(--color-surface-alt);
+}
+
+.projects__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.projects__filter {
+  padding: 8px 24px;
+  border: 0;
+  border-radius: 2px;
+  background-color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.projects__filter:hover {
+  background-color: var(--color-light-blue);
+}
+
+.projects__filter--active,
+.projects__filter--active:hover {
+  background-color: var(--color-navy);
+  color: var(--color-surface);
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.projects__empty {
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* ---------- Carte projet ---------- */
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.project-card__media {
+  height: 100%;
+  min-height: 342px;
+  overflow: hidden;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card__image {
+  transform: scale(1.04);
+}
+
+.project-card--reversed .project-card__media {
+  order: 2;
+}
+
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+}
+
+.project-card__category {
+  margin-bottom: 8px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-brown);
+}
+
+.project-card__title {
+  margin-bottom: 32px;
+  font-family: var(--font-display);
+  font-size: var(--fs-h2-sm);
+  font-weight: 700;
+  line-height: 1.11;
+  color: var(--color-navy);
+}
+
+.project-card__excerpt {
+  margin: -24px 0 32px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: var(--color-text);
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.project-card__link:hover {
+  gap: 14px;
+  color: var(--color-brown);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .portfolio-hero__visual {
+    display: none;
+  }
+
+  .project-card__body {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-hero {
+    padding-block: 56px 72px;
+  }
+
+  .portfolio-hero__text {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .projects__inner {
+    gap: 40px;
+  }
+
+  .projects__filters {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .projects__filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects__filter {
+    flex-shrink: 0;
+  }
+
+  .projects__list {
+    gap: 24px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card__media {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-card--reversed .project-card__media {
+    order: 0;
+  }
+
+  .project-card__body {
+    padding: 24px;
+  }
+
+  .project-card__title {
+    margin-bottom: 24px;
+  }
+
+  .project-card__excerpt {
+    margin: -16px 0 24px;
+    font-size: 1rem;
+    line-height: 26px;
+  }
+}

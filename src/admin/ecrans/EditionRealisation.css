@@ -1,0 +1,29 @@
+.edition-realisation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.edition-realisation__statut {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.edition-realisation__pastille {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+}
+
+.edition-realisation__pastille--publie {
+  background-color: #22c55e;
+}
+
+.edition-realisation__aide {
+  margin-top: 2px;
+  color: var(--admin-discret);
+}

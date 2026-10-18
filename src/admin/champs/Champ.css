@@ -1,0 +1,341 @@
+/* ---------- Champ ---------- */
+.admin-champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-margin: 120px;
+}
+
+.admin-champ--groupe {
+  gap: 18px;
+}
+
+.admin-champ--ligne {
+  flex-direction: row;
+  align-items: center;
+}
+
+.admin-champ__label {
+  padding: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--admin-texte);
+}
+
+.admin-champ--groupe > .admin-champ__label {
+  margin-bottom: 2px;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--admin-discret);
+}
+
+.admin-champ__optionnel {
+  font-weight: 400;
+  color: var(--admin-discret);
+}
+
+.admin-champ__input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 8px;
+  background-color: var(--admin-surface);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--admin-texte);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.admin-champ__input--zone {
+  resize: vertical;
+}
+
+.admin-champ__input:hover {
+  border-color: #c7d0dc;
+}
+
+.admin-champ__input:focus,
+.admin-champ--actif .admin-champ__input {
+  outline: none;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.16);
+}
+
+.admin-champ__input[readonly] {
+  background-color: var(--admin-fond);
+  color: var(--admin-discret);
+}
+
+.admin-champ__aide {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--admin-discret);
+}
+
+.admin-champ__erreur {
+  font-size: 0.8125rem;
+  color: var(--admin-danger);
+}
+
+/* ---------- Image ---------- */
+.admin-image {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 10px;
+  background-color: var(--admin-fond);
+}
+
+.admin-champ--actif .admin-image {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.16);
+}
+
+.admin-image__apercu {
+  flex-shrink: 0;
+  width: 84px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  background-color: var(--admin-bordure);
+}
+
+.admin-image__apercu--vide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--admin-discret);
+}
+
+.admin-image__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.admin-image__nom {
+  overflow: hidden;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--admin-discret);
+}
+
+.admin-image__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ---------- Icônes ---------- */
+.admin-icones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.admin-icones__choix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 8px;
+  background-color: var(--admin-surface);
+  color: var(--admin-discret);
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.admin-icones__choix:hover {
+  border-color: #c7d0dc;
+  color: var(--admin-texte);
+}
+
+.admin-icones__choix--actif,
+.admin-icones__choix--actif:hover {
+  border-color: var(--color-orange);
+  background-color: rgba(255, 140, 0, 0.1);
+  color: var(--color-brown);
+}
+
+/* ---------- Interrupteur ---------- */
+.admin-interrupteur {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.admin-interrupteur__case {
+  position: absolute;
+  opacity: 0;
+}
+
+.admin-interrupteur__piste {
+  position: relative;
+  flex-shrink: 0;
+  width: 38px;
+  height: 22px;
+  border-radius: 999px;
+  background-color: #cbd5e1;
+  transition: background-color 0.2s ease;
+}
+
+.admin-interrupteur__piste::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--admin-surface);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.admin-interrupteur__case:checked + .admin-interrupteur__piste {
+  background-color: #16a34a;
+}
+
+.admin-interrupteur__case:checked + .admin-interrupteur__piste::after {
+  transform: translateX(16px);
+}
+
+.admin-interrupteur__case:focus-visible + .admin-interrupteur__piste {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+.admin-interrupteur__libelle {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ---------- Puces (filtres) ---------- */
+.admin-puces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.admin-puces__puce {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 999px;
+  background-color: var(--admin-surface);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.admin-puces__puce:hover {
+  border-color: #c7d0dc;
+}
+
+.admin-puces__puce--active,
+.admin-puces__puce--active:hover {
+  border-color: var(--color-navy);
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.admin-puces__puce:focus-within {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+/* ---------- Listes ---------- */
+.admin-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-liste--compacte {
+  gap: 6px;
+}
+
+.admin-liste__ligne {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  scroll-margin: 120px;
+}
+
+.admin-liste__ligne--actif .admin-champ__input {
+  border-color: var(--color-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.16);
+}
+
+.admin-liste__element {
+  border: 1px solid var(--admin-bordure);
+  border-radius: 10px;
+  background-color: var(--admin-surface);
+}
+
+.admin-liste__entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 8px 8px 12px;
+  border-bottom: 1px solid var(--admin-bordure);
+  background-color: var(--admin-fond);
+  border-radius: 10px 10px 0 0;
+}
+
+.admin-liste__titre {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.admin-liste__numero {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background-color: var(--color-navy);
+  font-size: 0.6875rem;
+  color: var(--color-white);
+}
+
+.admin-liste__resume {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.admin-liste__actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2px;
+}
+
+.admin-liste__champs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px 12px;
+}

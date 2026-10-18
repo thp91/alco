@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "badge": "Expertise verticale & rénovation",
+    "titre": "Travailler là où\nles autres *ne peuvent*",
+    "texte": "Basée en Île-de-France, Alco’Rope est spécialisée dans les travaux en hauteur et la rénovation du bâti. Nos équipes interviennent en toute sécurité sur les chantiers les plus exigeants, en France et dans les pays limitrophes.",
+    "boutonPrincipal": "Nos services",
+    "boutonSecondaire": "Notre expertise",
+    "image": "/images/home-hero.jpg"
+  },
+  "services": {
+    "titre": "Maîtrise technique\n& *polyvalence*",
+    "texte": "Une gamme complète de services industriels et urbains pour l’entretien de votre patrimoine immobilier.",
+    "liste": [
+      {
+        "icone": "engineering",
+        "titre": "Cordiste",
+        "texte": "Interventions rapides et sécurisées en hauteur, sans besoin d’échafaudage.",
+        "lien": "/services/cordiste"
+      },
+      {
+        "icone": "formatPaint",
+        "titre": "Ravalement de façade",
+        "texte": "Nettoyage et remise à neuf de vos façades par cordage, même les plus inaccessibles.",
+        "lien": "/services/ravalement-de-facade"
+      },
+      {
+        "icone": "waterDrop",
+        "titre": "Étanchéité & toiture",
+        "texte": "Protection durable des toitures, terrasses et cheneaux.",
+        "lien": "/services/etancheite-toiture"
+      },
+      {
+        "icone": "shield",
+        "titre": "Sécurité en hauteur",
+        "texte": "Installation de filets, lignes de vie et dispositifs anti-chute.",
+        "lien": "/services/securite-en-hauteur"
+      },
+      {
+        "icone": "paintRoller",
+        "titre": "Peinture & bardage",
+        "texte": "Application de peintures extérieures et rénovation de bardages.",
+        "lien": "/services/peinture-bardage"
+      },
+      {
+        "icone": "cleaning",
+        "titre": "Nettoyage technique",
+        "texte": "Démoussage, haute pression, structures métalliques ou vitrées.",
+        "lien": "/services/nettoyage-technique"
+      }
+    ]
+  },
+  "expertise": {
+    "surtitre": "Le spécialiste Île-de-France",
+    "titre": "Une exigence absolue\npour vos\n*interventions critiques*",
+    "paragraphes": [
+      "Installée en Île-de-France, Alco’Rope est une entreprise à taille humaine spécialisée dans les travaux d’accès difficile et les interventions techniques sur cordes. Grâce à une équipe de professionnels qualifiés et passionnés, nous réalisons des prestations de qualité dans toute la France, ainsi que dans les pays limitrophes comme la Belgique et le Luxembourg.",
+      "Notre savoir-faire allie sécurité, efficacité et réactivité, pour répondre aux exigences des professionnels comme des particuliers."
+    ],
+    "image": "/images/home-about.jpg",
+    "imageAlt": "Cordistes Alco'rope en intervention sur une façade",
+    "chiffre": "25+",
+    "chiffreLibelle": "Années d’expertise"
+  },
+  "raisons": {
+    "titre": "Pourquoi nous *choisir ?*",
+    "liste": [
+      {
+        "icone": "payments",
+        "titre": "Des tarifs compétitifs",
+        "texte": "Des solutions techniques sans échafaudage qui réduisent vos coûts d’intervention tout en maintenant un haut niveau de qualité."
+      },
+      {
+        "icone": "bolt",
+        "titre": "Rapidité et flexibilité",
+        "texte": "Interventions rapides, même dans les zones complexes ou urgentes, avec des délais maîtrisés."
+      },
+      {
+        "icone": "verified",
+        "titre": "Expertise certifiée",
+        "texte": "Des cordistes expérimentés, formés aux dernières normes de sécurité, pour des prestations fiables et conformes."
+      }
+    ]
+  },
+  "faq": {
+    "titre": "Foire aux *questions*",
+    "liste": [
+      {
+        "question": "Intervenez-vous partout en Île-de-France ?",
+        "reponse": "Oui. Basés en Essonne, nous intervenons à Paris et dans tous les départements d’Île-de-France, ainsi que partout en France et dans les pays limitrophes pour les chantiers d’envergure."
+      },
+      {
+        "question": "Quelles sont vos garanties de sécurité ?",
+        "reponse": "Nos cordistes sont certifiés et travaillent avec du matériel contrôlé selon les normes en vigueur. Chaque chantier fait l’objet d’une analyse des risques et d’un plan d’intervention validé en amont."
+      },
+      {
+        "question": "Comment obtenir un devis ?",
+        "reponse": "Remplissez notre formulaire de contact ou appelez-nous directement. Nos experts étudient votre problématique d’accès et vous adressent un devis détaillé sous 48h."
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+/* Aperçu de l'éditeur visuel : zones cliquables (attributs posés par Editable) */
+.cms-edition [data-cms-path] {
+  cursor: pointer !important;
+  transition: outline-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cms-edition [data-cms-path]:hover {
+  outline: 2px dashed rgba(255, 140, 0, 0.8);
+  outline-offset: 4px;
+}
+
+.cms-edition [data-cms-path].cms-actif {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 8px rgba(255, 140, 0, 0.18);
+}
+
+.cms-edition [data-cms-image]:hover,
+.cms-edition [data-cms-image].cms-actif {
+  outline-offset: -4px;
+}

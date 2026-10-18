@@ -1,0 +1,59 @@
+{
+  "coordonnees": {
+    "telephone": "06 64 20 82 10",
+    "email": "contact@alcorope.fr",
+    "adresseLigne1": "56 rue du Martroy",
+    "adresseLigne2": "91100, Ballancourt, France"
+  },
+  "appel": {
+    "titre": "Prêt pour votre\n*prochain projet ?*",
+    "texte": "Nos experts étudient vos problématiques d’accès et vous proposent un devis détaillé sous 48h.",
+    "bouton": "Obtenir un devis",
+    "telephone": "+33 (0)1 23 45 67 89"
+  },
+  "avis": {
+    "titre": "Les avis de *nos clients*",
+    "liste": [
+      {
+        "icone": "person",
+        "citation": "Service impeccable pour le ravalement de notre immeuble à Boulogne. Équipe ponctuelle et discrète.",
+        "auteur": "Syndic de copropriété"
+      },
+      {
+        "icone": "engineering",
+        "citation": "Une réactivité impressionnante pour une intervention urgente en toiture. Je recommande vivement Alco’rope.",
+        "auteur": "Responsable maintenance"
+      },
+      {
+        "icone": "factory",
+        "citation": "Expertise technique au rendez-vous. Travail soigné sans les contraintes d’un échafaudage.",
+        "auteur": "Client industriel"
+      }
+    ]
+  },
+  "zone": {
+    "titre": "Rayon\n*d’intervention*",
+    "image": "/images/map-france.jpg",
+    "carteTitre": "IDF & National",
+    "carteTexte": "Basés à Paris, nous intervenons sur toute l’Île-de-France et les grandes métropoles françaises pour vos chantiers d’envergure.",
+    "liste": [
+      {
+        "titre": "Paris intra-muros",
+        "texte": "Réactivité maximale pour les syndics et copropriétés parisiennes."
+      },
+      {
+        "titre": "Île-de-France (92, 93, 94...)",
+        "texte": "Maintenance de sites industriels et tertiaires en couronne."
+      },
+      {
+        "titre": "Déplacements nationaux",
+        "texte": "Missions spécifiques (Éolien, Ponts, Barrages) partout en France."
+      }
+    ]
+  },
+  "piedDePage": {
+    "accroche": "Expertise reconnue en travaux sur cordes et maintenance difficile d’accès en milieu urbain et industriel.",
+    "mentions": "Alco’rope. Expertise en Travaux Acrobatiques et Rénovation Industrielle.",
+    "devise": "Hautes hauteurs • Haute précision"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "badge": "Expertise verticale",
+    "titre": "Précision au\n*sommet*.",
+    "texte": "Interventions acrobatiques et maintenance industrielle en hauteur. Contactez nos experts pour une étude technique de votre projet en Île-de-France."
+  },
+  "formulaire": {
+    "titre": "Demander un devis gratuit",
+    "sousTitre": "Réponse technique sous 48h par nos chargés d’affaires.",
+    "typesProjet": [
+      "Rénovation de façade",
+      "Travaux sur cordes",
+      "Étanchéité & toiture",
+      "Sécurité en hauteur",
+      "Peinture & bardage",
+      "Nettoyage technique",
+      "Autre"
+    ],
+    "bouton": "Envoyer la demande",
+    "confirmation": "Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 48h."
+  },
+  "coordonnees": {
+    "image": "/images/contact-map.jpg",
+    "imageAlt": "Plan d’accès au siège d’Alco'rope",
+    "telephoneTitre": "Appelez-nous",
+    "emailTitre": "Email",
+    "adresseTitre": "Siège social"
+  }
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "cordiste",
+    "menu": {
+      "titre": "Cordiste",
+      "icone": "engineering"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "*Cordiste*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/similar-aquatique.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de faire appel à *Alco’rope*",
+      "liste": [
+        {
+          "image": "",
+          "icone": "bolt",
+          "titre": "Sans échafaudage",
+          "texte": "Accès direct à la zone d’intervention, rapide et économique."
+        },
+        {
+          "image": "",
+          "icone": "engineering",
+          "titre": "Interventions complexes",
+          "texte": "Idéal pour les endroits exigus, hauts ou inaccessibles par nacelle."
+        },
+        {
+          "image": "",
+          "icone": "verified",
+          "titre": "Haute sécurité",
+          "texte": "Cordistes formés, équipement certifié, procédures strictes."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Les travaux sur cordes permettent d’intervenir là où les autres méthodes ne passent pas. Nos techniciens qualifiés utilisent des techniques de progression et de sécurité empruntées à l’alpinisme, pour réaliser des travaux de construction, rénovation, maintenance ou inspection.",
+      "image": "/images/service-cordiste.jpg",
+      "imageAlt": "Cordiste en intervention sur un silo industriel",
+      "carteTitre": "",
+      "carteTexte": "",
+      "etapes": [
+        {
+          "titre": "Analyse préalable du chantier",
+          "texte": "Nous réalisons une visite sur site ou à distance pour évaluer la zone d’intervention, identifier les points d’ancrage disponibles et anticiper les contraintes techniques ou sécuritaires."
+        },
+        {
+          "titre": "Mise en sécurité et installation",
+          "texte": "Les cordistes installent leur matériel : cordes, harnais, descendeurs et équipements de protection. Le périmètre est balisé pour éviter tout risque pour les usagers ou riverains."
+        },
+        {
+          "titre": "Intervention",
+          "texte": "Les travaux sont réalisés en hauteur, avec rigueur et méthode, que ce soit pour de la maintenance, de la réparation, du nettoyage ou une installation."
+        },
+        {
+          "titre": "Contrôle qualité & nettoyage du site",
+          "texte": "Un contrôle final est effectué pour valider la conformité du travail. Le site est remis en état et débarrassé de tout matériel ou débris."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "",
+      "liste": [
+        {
+          "question": "Dans quelles zones intervenez-vous ?",
+          "reponse": "Nous sommes basés en Île-de-France et intervenons dans toute la France, ainsi que dans les pays limitrophes comme la Belgique ou le Luxembourg."
+        },
+        {
+          "question": "Quelles sont vos spécialités ?",
+          "reponse": "Nous réalisons des travaux sur cordes, ravalements, étanchéité, pose de dispositifs de sécurité, peinture extérieure, nettoyage technique et plus encore."
+        },
+        {
+          "question": "Intervenez-vous pour des urgences ?",
+          "reponse": "Oui. Nous pouvons intervenir rapidement en cas de danger ou d’urgence (toiture endommagée, infiltration, etc.)."
+        },
+        {
+          "question": "Avez-vous besoin d’échafaudages ?",
+          "reponse": "Non, nos équipes travaillent principalement sur cordes, ce qui évite l’installation d’échafaudages coûteux et encombrants."
+        },
+        {
+          "question": "Travaillez-vous avec des professionnels et des particuliers ?",
+          "reponse": "Oui. Nous accompagnons aussi bien les entreprises, les syndics, les industries que les particuliers."
+        },
+        {
+          "question": "Vos travaux sont-ils assurés ?",
+          "reponse": "Oui, toutes nos interventions sont couvertes par une assurance responsabilité civile et décennale."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "ravalement-de-facade",
+    "menu": {
+      "titre": "Ravalement de façade",
+      "icone": "formatPaint"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "Ravalement\n*de façade*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/project-haussmann.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de faire appel à *Alco’rope*",
+      "liste": [
+        {
+          "image": "",
+          "icone": "factory",
+          "titre": "Interventions sur structures sensibles",
+          "texte": "Verrières, silos, toitures, ponts, etc."
+        },
+        {
+          "image": "",
+          "icone": "formatPaint",
+          "titre": "Méthodes adaptées à chaque support",
+          "texte": "Haute pression, brossage, démoussage ou mousse active."
+        },
+        {
+          "image": "",
+          "icone": "bolt",
+          "titre": "Pas d’interruption de site",
+          "texte": "Pas de nacelle ni échafaudage = activité maintenue."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Chez Alcorope, le ravalement est effectué par cordage, évitant ainsi le montage d’échafaudages coûteux. Nous traitons les pathologies (fissures, encrassement, usure), puis nous appliquons les traitements et finitions adaptés à chaque type de façade.",
+      "image": "/images/service-ravalement.jpg",
+      "imageAlt": "Façade en pierre en cours de ravalement",
+      "carteTitre": "",
+      "carteTexte": "",
+      "etapes": [
+        {
+          "titre": "Inspection de la façade",
+          "texte": "Nous repérons les pathologies présentes (fissures, salissures, joints abîmés) et définissons les traitements nécessaires en fonction du support (pierre, crépi, béton…)."
+        },
+        {
+          "titre": "Préparation du chantier",
+          "texte": "Le sol est protégé, les cordes sont installées depuis la toiture et les protections collectives ou balisages sont mis en place pour la sécurité."
+        },
+        {
+          "titre": "Ravalement par cordistes",
+          "texte": "Nos techniciens procèdent au nettoyage (hydrogommage, haute pression…), aux réparations (rebouchage, reprise d’enduit), puis à la finition (peinture, traitement, hydrofuge…)."
+        },
+        {
+          "titre": "Contrôle final & réception",
+          "texte": "Chaque façade est inspectée en détail. Un rapport peut être fourni si besoin, et nous assurons une remise propre du site."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "",
+      "liste": [
+        {
+          "question": "Dans quelles zones intervenez-vous ?",
+          "reponse": "Nous sommes basés en Île-de-France et intervenons dans toute la France, ainsi que dans les pays limitrophes comme la Belgique ou le Luxembourg."
+        },
+        {
+          "question": "Quelles sont vos spécialités ?",
+          "reponse": "Nous réalisons des travaux sur cordes, ravalements, étanchéité, pose de dispositifs de sécurité, peinture extérieure, nettoyage technique et plus encore."
+        },
+        {
+          "question": "Intervenez-vous pour des urgences ?",
+          "reponse": "Oui. Nous pouvons intervenir rapidement en cas de danger ou d’urgence (toiture endommagée, infiltration, etc.)."
+        },
+        {
+          "question": "Avez-vous besoin d’échafaudages ?",
+          "reponse": "Non, nos équipes travaillent principalement sur cordes, ce qui évite l’installation d’échafaudages coûteux et encombrants."
+        },
+        {
+          "question": "Travaillez-vous avec des professionnels et des particuliers ?",
+          "reponse": "Oui. Nous accompagnons aussi bien les entreprises, les syndics, les industries que les particuliers."
+        },
+        {
+          "question": "Vos travaux sont-ils assurés ?",
+          "reponse": "Oui, toutes nos interventions sont couvertes par une assurance responsabilité civile et décennale."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "etancheite-toiture",
+    "menu": {
+      "titre": "Étanchéité & toiture",
+      "icone": "waterDrop"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "Étanchéité\n*& toiture*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/project-defense.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de faire appel à *Alco’rope*",
+      "liste": [
+        {
+          "image": "",
+          "icone": "description",
+          "titre": "Analyse technique précise",
+          "texte": "Inspection complète avant travaux pour identifier les sources de fuites."
+        },
+        {
+          "image": "",
+          "icone": "waterDrop",
+          "titre": "Solutions adaptées",
+          "texte": "Résines, membranes ou réparations ciblées selon la configuration."
+        },
+        {
+          "image": "",
+          "icone": "shield",
+          "titre": "Accès sécurisé sans nacelle",
+          "texte": "Intervention efficace, même sur toiture technique ou inclinée."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Nous traitons les infiltrations sur tous types de toitures et terrasses. Nos cordistes assurent un diagnostic complet, la préparation du support, puis appliquent les traitements ou revêtements étanches adaptés (résines, bitumes, joints…).",
+      "image": "/images/service-etancheite.jpg",
+      "imageAlt": "Couvreur en intervention sur une toiture en tuiles",
+      "carteTitre": "",
+      "carteTexte": "",
+      "etapes": [
+        {
+          "titre": "Détection des points de faiblesse",
+          "texte": "Nous inspectons les zones critiques : joints, solins, évacuations, membranes, etc. Une prise de photos ou un rapport peut être fourni pour visualiser les problèmes."
+        },
+        {
+          "titre": "Nettoyage préparatoire",
+          "texte": "Les surfaces sont nettoyées (démoussage, dépoussiérage) pour permettre une adhérence parfaite des matériaux d’étanchéité."
+        },
+        {
+          "titre": "Application des produits ou réfection",
+          "texte": "Selon le besoin, nous posons une membrane bitumineuse, appliquons une résine d’étanchéité ou réalisons une reprise de toiture (zinc, PVC, etc.)."
+        },
+        {
+          "titre": "Vérification & test",
+          "texte": "Nous vérifions la bonne étanchéité via un test visuel ou un test à l’eau selon les cas, puis nettoyons la zone."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "",
+      "liste": [
+        {
+          "question": "Dans quelles zones intervenez-vous ?",
+          "reponse": "Nous sommes basés en Île-de-France et intervenons dans toute la France, ainsi que dans les pays limitrophes comme la Belgique ou le Luxembourg."
+        },
+        {
+          "question": "Quelles sont vos spécialités ?",
+          "reponse": "Nous réalisons des travaux sur cordes, ravalements, étanchéité, pose de dispositifs de sécurité, peinture extérieure, nettoyage technique et plus encore."
+        },
+        {
+          "question": "Intervenez-vous pour des urgences ?",
+          "reponse": "Oui. Nous pouvons intervenir rapidement en cas de danger ou d’urgence (toiture endommagée, infiltration, etc.)."
+        },
+        {
+          "question": "Avez-vous besoin d’échafaudages ?",
+          "reponse": "Non, nos équipes travaillent principalement sur cordes, ce qui évite l’installation d’échafaudages coûteux et encombrants."
+        },
+        {
+          "question": "Travaillez-vous avec des professionnels et des particuliers ?",
+          "reponse": "Oui. Nous accompagnons aussi bien les entreprises, les syndics, les industries que les particuliers."
+        },
+        {
+          "question": "Vos travaux sont-ils assurés ?",
+          "reponse": "Oui, toutes nos interventions sont couvertes par une assurance responsabilité civile et décennale."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "securite-en-hauteur",
+    "menu": {
+      "titre": "Sécurité en hauteur",
+      "icone": "shield"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "Sécurité en\n*hauteur*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/securite-hero.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de choisir *Alco’rope*",
+      "liste": [
+        {
+          "image": "/images/securite-reason-1.jpg",
+          "icone": "",
+          "titre": "Interventions sur structures sensibles",
+          "texte": "Solutions conformes aux normes françaises et européennes."
+        },
+        {
+          "image": "/images/securite-reason-2.jpg",
+          "icone": "",
+          "titre": "Méthodes adaptées à chaque support",
+          "texte": "Haute pression, brossage, démoussage ou mousse active."
+        },
+        {
+          "image": "/images/securite-reason-3.jpg",
+          "icone": "",
+          "titre": "Pas d’interruption de site",
+          "texte": "Pas de nacelle ni échafaudage = activité maintenue."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Nous réalisons tous types de nettoyage technique en hauteur, même sur des structures complexes ou fragiles. Nous adaptons notre méthode selon les matériaux et l’environnement du site (industriel, résidentiel, public…).",
+      "image": "/images/securite-approach.jpg",
+      "imageAlt": "Cordiste installant une ligne de vie en toiture",
+      "carteTitre": "Précision technique",
+      "carteTexte": "Chaque point d’ancrage est calculé pour résister aux forces dynamiques extrêmes.",
+      "etapes": [
+        {
+          "titre": "Étude technique personnalisée",
+          "texte": "Nous analysons votre bâtiment pour identifier les zones à sécuriser, les normes à respecter et les dispositifs les mieux adaptés."
+        },
+        {
+          "titre": "Installation des équipements",
+          "texte": "Nos cordistes posent les lignes de vie, filets de sécurité, garde-corps ou points d’ancrage, selon un plan validé en amont. Tout est fixé solidement avec des matériaux certifiés."
+        },
+        {
+          "titre": "Contrôle de conformité",
+          "texte": "Des tests de résistance et de conformité sont réalisés sur chaque point d’ancrage ou ligne installée."
+        },
+        {
+          "titre": "Formation (si souhaitée)",
+          "texte": "Nous pouvons former vos équipes à l’utilisation des équipements pour garantir un usage sécurisé."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "Tout ce qu’il faut savoir sur les normes et dispositifs de sécurité.",
+      "liste": [
+        {
+          "question": "Quelle est la différence entre une ligne de vie et un garde-corps ?",
+          "reponse": "Le garde-corps est une protection collective qui empêche la chute sans action de l’utilisateur. La ligne de vie est un dispositif d’ancrage auquel l’intervenant s’attache avec un harnais : elle arrête ou retient la chute."
+        },
+        {
+          "question": "À quelle fréquence faut-il contrôler les installations ?",
+          "reponse": "Les dispositifs d’ancrage et lignes de vie doivent être vérifiés au moins une fois par an par une personne compétente, ainsi qu’après toute chute ou modification de la structure."
+        },
+        {
+          "question": "Intervenez-vous sur des toitures fragiles ?",
+          "reponse": "Oui. Nous mettons en place des protections adaptées (filets, cheminements sécurisés, ancrages temporaires) avant toute intervention sur des couvertures fragiles."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "peinture-bardage",
+    "menu": {
+      "titre": "Peinture & bardage",
+      "icone": "paintRoller"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "Peinture\n*& bardage*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/project-havre.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de faire appel à *Alco’rope*",
+      "liste": [
+        {
+          "image": "",
+          "icone": "apartment",
+          "titre": "Accès tous supports",
+          "texte": "Bardages métalliques, bois, béton… même en hauteur."
+        },
+        {
+          "image": "",
+          "icone": "paintRoller",
+          "titre": "Esthétique et protection",
+          "texte": "Peintures techniques résistantes aux UV, à la pluie, au gel."
+        },
+        {
+          "image": "",
+          "icone": "verified",
+          "titre": "Application maîtrisée",
+          "texte": "Au rouleau, à la brosse ou par pulvérisation selon le support."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Nous rénovons et protégeons vos façades et bardages avec des produits adaptés. Après nettoyage et préparation des surfaces, nous appliquons les peintures ou traitements avec rigueur pour un résultat net et durable.",
+      "image": "/images/service-peinture.jpg",
+      "imageAlt": "Cordistes peignant un mur intérieur de grande hauteur",
+      "carteTitre": "",
+      "carteTexte": "",
+      "etapes": [
+        {
+          "titre": "Évaluation des supports",
+          "texte": "Nous vérifions l’état des bardages ou façades (oxydation, écaillage, infiltration) pour définir le traitement le plus adapté."
+        },
+        {
+          "titre": "Préparation complète",
+          "texte": "Décapage, ponçage, nettoyage ou traitement anticorrosion sont réalisés avant application."
+        },
+        {
+          "titre": "Peinture technique ou traitement",
+          "texte": "Nous appliquons la peinture, le vernis ou les produits de protection par brosse, rouleau ou pulvérisation selon la configuration."
+        },
+        {
+          "titre": "Contrôle & finitions",
+          "texte": "Nous vérifions le rendu et corrigeons toute imperfection. Le chantier est nettoyé et sécurisé après intervention."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "",
+      "liste": [
+        {
+          "question": "Dans quelles zones intervenez-vous ?",
+          "reponse": "Nous sommes basés en Île-de-France et intervenons dans toute la France, ainsi que dans les pays limitrophes comme la Belgique ou le Luxembourg."
+        },
+        {
+          "question": "Quelles sont vos spécialités ?",
+          "reponse": "Nous réalisons des travaux sur cordes, ravalements, étanchéité, pose de dispositifs de sécurité, peinture extérieure, nettoyage technique et plus encore."
+        },
+        {
+          "question": "Intervenez-vous pour des urgences ?",
+          "reponse": "Oui. Nous pouvons intervenir rapidement en cas de danger ou d’urgence (toiture endommagée, infiltration, etc.)."
+        },
+        {
+          "question": "Avez-vous besoin d’échafaudages ?",
+          "reponse": "Non, nos équipes travaillent principalement sur cordes, ce qui évite l’installation d’échafaudages coûteux et encombrants."
+        },
+        {
+          "question": "Travaillez-vous avec des professionnels et des particuliers ?",
+          "reponse": "Oui. Nous accompagnons aussi bien les entreprises, les syndics, les industries que les particuliers."
+        },
+        {
+          "question": "Vos travaux sont-ils assurés ?",
+          "reponse": "Oui, toutes nos interventions sont couvertes par une assurance responsabilité civile et décennale."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "nettoyage-technique",
+    "menu": {
+      "titre": "Nettoyage technique",
+      "icone": "cleaning"
+    },
+    "hero": {
+      "surtitre": "Service",
+      "titre": "Nettoyage\n*technique*",
+      "texte": "Nous intervenons dans tous les secteurs du BTP : bâtiments résidentiels, sites industriels, ouvrages publics ou privés. Nos services s’adressent aux professionnels comme aux particuliers, partout en France et dans les pays voisins.",
+      "image": "/images/detail-gallery-1.jpg"
+    },
+    "raisons": {
+      "titre": "3 raisons de faire appel à *Alco’rope*",
+      "liste": [
+        {
+          "image": "",
+          "icone": "factory",
+          "titre": "Interventions sur structures sensibles",
+          "texte": "Verrières, silos, toitures, ponts, etc."
+        },
+        {
+          "image": "",
+          "icone": "cleaning",
+          "titre": "Méthodes adaptées à chaque support",
+          "texte": "Haute pression, brossage, démoussage ou mousse active."
+        },
+        {
+          "image": "",
+          "icone": "bolt",
+          "titre": "Pas d’interruption de site",
+          "texte": "Pas de nacelle ni échafaudage = activité maintenue."
+        }
+      ]
+    },
+    "approche": {
+      "titre": "Notre\n*approche*",
+      "texte": "Nous réalisons tous types de nettoyage technique en hauteur, même sur des structures complexes ou fragiles. Nous adaptons notre méthode selon les matériaux et l’environnement du site (industriel, résidentiel, public…).",
+      "image": "/images/service-nettoyage.jpg",
+      "imageAlt": "Cordiste nettoyant la façade vitrée d’une tour",
+      "carteTitre": "",
+      "carteTexte": "",
+      "etapes": [
+        {
+          "titre": "Diagnostic du support",
+          "texte": "Nous analysons le type de salissure (mousse, pollution, résidus) et la nature du support (tuiles, verre, métal…) afin d’adapter la méthode de nettoyage."
+        },
+        {
+          "titre": "Choix de la technique",
+          "texte": "En fonction du besoin : nettoyage haute pression, brossage manuel, mousse active, nettoyage chimique doux ou vapeur."
+        },
+        {
+          "titre": "Intervention sur cordes",
+          "texte": "Les cordistes accèdent à la zone ciblée et réalisent le nettoyage en respectant les matériaux et l’environnement."
+        },
+        {
+          "titre": "Rinçage et contrôle visuel",
+          "texte": "Nous terminons par un rinçage soigneux (si besoin) et une inspection du résultat avec ou sans le client."
+        }
+      ]
+    },
+    "faq": {
+      "titre": "Questions *fréquentes*",
+      "sousTitre": "",
+      "liste": [
+        {
+          "question": "Dans quelles zones intervenez-vous ?",
+          "reponse": "Nous sommes basés en Île-de-France et intervenons dans toute la France, ainsi que dans les pays limitrophes comme la Belgique ou le Luxembourg."
+        },
+        {
+          "question": "Quelles sont vos spécialités ?",
+          "reponse": "Nous réalisons des travaux sur cordes, ravalements, étanchéité, pose de dispositifs de sécurité, peinture extérieure, nettoyage technique et plus encore."
+        },
+        {
+          "question": "Intervenez-vous pour des urgences ?",
+          "reponse": "Oui. Nous pouvons intervenir rapidement en cas de danger ou d’urgence (toiture endommagée, infiltration, etc.)."
+        },
+        {
+          "question": "Avez-vous besoin d’échafaudages ?",
+          "reponse": "Non, nos équipes travaillent principalement sur cordes, ce qui évite l’installation d’échafaudages coûteux et encombrants."
+        },
+        {
+          "question": "Travaillez-vous avec des professionnels et des particuliers ?",
+          "reponse": "Oui. Nous accompagnons aussi bien les entreprises, les syndics, les industries que les particuliers."
+        },
+        {
+          "question": "Vos travaux sont-ils assurés ?",
+          "reponse": "Oui, toutes nos interventions sont couvertes par une assurance responsabilité civile et décennale."
+        }
+      ]
+    }
+  }
+]

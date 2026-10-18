@@ -1,0 +1,81 @@
+.liste-pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.liste-pages__carte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 14px;
+  background-color: var(--admin-surface);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.liste-pages__carte:hover {
+  border-color: #c7d0dc;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(9, 29, 46, 0.08);
+}
+
+.liste-pages__vignette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-navy);
+  color: rgba(209, 228, 251, 0.6);
+}
+
+.liste-pages__vignette img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.liste-pages__corps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px 16px;
+}
+
+.liste-pages__groupe {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-brown);
+}
+
+.liste-pages__titre {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.liste-pages__description {
+  font-size: 0.8125rem;
+  color: var(--admin-discret);
+}
+
+.liste-pages__icone {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 7px;
+  box-sizing: content-box;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--admin-texte);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.liste-pages__carte:hover .liste-pages__icone {
+  opacity: 1;
+}

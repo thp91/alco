@@ -1,0 +1,216 @@
+/* L'éditeur occupe toute la hauteur sous la barre de publication */
+.editeur {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  height: calc(100vh - 61px);
+}
+
+/* ---------- Aperçu ---------- */
+.editeur__apercu {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #e9edf3;
+}
+
+.editeur__barre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--admin-bordure);
+  background-color: var(--admin-surface);
+}
+
+.editeur__retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: var(--admin-discret);
+  transition: color 0.15s ease;
+}
+
+.editeur__retour:hover {
+  color: var(--admin-texte);
+}
+
+.editeur__titre {
+  overflow: hidden;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.editeur__outils {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editeur__appareils {
+  display: flex;
+  padding: 2px;
+  border-radius: 8px;
+  background-color: var(--admin-fond);
+}
+
+.editeur__appareil {
+  display: flex;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--admin-discret);
+}
+
+.editeur__appareil--actif {
+  background-color: var(--admin-surface);
+  box-shadow: 0 1px 2px rgba(15, 31, 46, 0.12);
+  color: var(--admin-texte);
+}
+
+.editeur__cadre {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  min-height: 0;
+  padding: 14px;
+}
+
+.editeur__iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 10px;
+  background-color: var(--admin-surface);
+  box-shadow: 0 10px 30px rgba(9, 29, 46, 0.08);
+  transition: width 0.3s ease;
+}
+
+.editeur--mobile .editeur__iframe {
+  width: 390px;
+  max-width: 100%;
+}
+
+/* ---------- Panneau des champs ---------- */
+.editeur__panneau {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+  border-left: 1px solid var(--admin-bordure);
+  background-color: var(--admin-surface);
+  overscroll-behavior: contain;
+}
+
+.editeur__panneau-entete {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--admin-bordure);
+}
+
+.editeur__panneau-titre {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.editeur__panneau-texte {
+  margin-top: 2px;
+  color: var(--admin-discret);
+}
+
+.editeur__sections {
+  padding-bottom: 48px;
+}
+
+.editeur__section {
+  border-bottom: 1px solid var(--admin-bordure);
+}
+
+.editeur__section-entete {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 20px;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  transition: background-color 0.15s ease;
+}
+
+.editeur__section-entete:hover {
+  background-color: var(--admin-fond);
+}
+
+.editeur__section-titre {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-weight: 700;
+}
+
+.editeur__pastille {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+}
+
+.editeur__badge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: var(--admin-fond);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--admin-discret);
+}
+
+.editeur__chevron {
+  flex-shrink: 0;
+  color: var(--admin-discret);
+  transition: transform 0.2s ease;
+}
+
+.editeur__section--ouverte .editeur__chevron {
+  transform: rotate(180deg);
+}
+
+.editeur__section-corps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 4px 20px 22px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px) {
+  .editeur {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+}
+
+@media (max-width: 900px) {
+  .editeur {
+    grid-template-columns: 1fr;
+    grid-template-rows: 55vh auto;
+    height: auto;
+  }
+
+  .editeur__panneau {
+    border-left: 0;
+    border-top: 1px solid var(--admin-bordure);
+    overflow: visible;
+  }
+
+  .editeur__cadre {
+    padding: 8px;
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "page": {
+    "badge": "Portfolio industriel",
+    "titre": "Nos\n*réalisations*",
+    "texte": "De la maintenance de structures industrielles complexes à la rénovation thermique d’immeubles Haussmanniens, Alco’rope déploie son expertise de cordiste sur toute la France avec une précision chirurgicale.",
+    "tousLesProjets": "Tous les projets",
+    "aucunProjet": "Aucun projet dans cette catégorie pour le moment.",
+    "lienProjet": "Voir le projet"
+  },
+  "detail": {
+    "defiTitre": "Le Défi",
+    "solutionTitre": "Notre Solution",
+    "galerieTitre": "Immersion Technique",
+    "galerieCompteur": "photos de terrain",
+    "ficheTitre": "Fiche Technique",
+    "enAttente": "La fiche détaillée de ce chantier sera bientôt disponible. Contactez-nous pour en savoir plus sur cette intervention.",
+    "similairesTitre": "Réalisations similaires",
+    "similairesTexte": "Découvrez d’autres interventions de grande envergure réalisées par nos équipes à travers l’Europe."
+  },
+  "categories": [
+    {
+      "id": "cordiste",
+      "libelle": "Cordiste"
+    },
+    {
+      "id": "ravalement",
+      "libelle": "Ravalement"
+    },
+    {
+      "id": "etancheite",
+      "libelle": "Étanchéité"
+    },
+    {
+      "id": "securite",
+      "libelle": "Sécurité"
+    },
+    {
+      "id": "peinture",
+      "libelle": "Peinture"
+    },
+    {
+      "id": "nettoyage",
+      "libelle": "Nettoyage"
+    }
+  ],
+  "projets": [
+    {
+      "titre": "Ravalement Haussmannien - Paris",
+      "slug": "ravalement-haussmannien-paris",
+      "publie": true,
+      "categorie": "Ravalement & Nettoyage",
+      "filtres": [
+        "cordiste",
+        "ravalement",
+        "nettoyage"
+      ],
+      "resume": "Restauration complète de pierre de taille sur 7 étages.",
+      "image": "/images/project-haussmann.jpg",
+      "surtitre": "",
+      "titreDetail": "",
+      "imageDetail": "",
+      "stats": [],
+      "defi": "",
+      "solution": "",
+      "galerie": [],
+      "resultats": [],
+      "maitreOuvrage": "",
+      "duree": "",
+      "expertises": [],
+      "normes": []
+    },
+    {
+      "titre": "Site Logistique - Gennevilliers",
+      "slug": "site-logistique-gennevilliers",
+      "publie": true,
+      "categorie": "Sécurité collective",
+      "filtres": [
+        "cordiste",
+        "securite"
+      ],
+      "resume": "",
+      "image": "/images/project-gennevilliers.jpg",
+      "surtitre": "",
+      "titreDetail": "",
+      "imageDetail": "",
+      "stats": [],
+      "defi": "",
+      "solution": "",
+      "galerie": [],
+      "resultats": [],
+      "maitreOuvrage": "",
+      "duree": "",
+      "expertises": [],
+      "normes": []
+    },
+    {
+      "titre": "Tour de Bureaux - La Défense",
+      "slug": "tour-de-bureaux-la-defense",
+      "publie": true,
+      "categorie": "Étanchéité",
+      "filtres": [
+        "cordiste",
+        "etancheite",
+        "ravalement"
+      ],
+      "resume": "",
+      "image": "/images/project-defense.jpg",
+      "surtitre": "Projet de rénovation",
+      "titreDetail": "Ravalement de façade sur cordes - Tour Défense",
+      "imageDetail": "/images/detail-hero.jpg",
+      "stats": [
+        {
+          "libelle": "Localisation",
+          "valeur": "Paris, La Défense",
+          "unite": "",
+          "accent": false
+        },
+        {
+          "libelle": "Hauteur maximale",
+          "valeur": "180",
+          "unite": "mètres",
+          "accent": true
+        },
+        {
+          "libelle": "Statut",
+          "valeur": "Livré en 2023",
+          "unite": "",
+          "accent": false
+        }
+      ],
+      "defi": "La tour de 45 étages présentait une dégradation avancée des joints d’étanchéité et une accumulation de pollution urbaine sur ses façades en verre et aluminium. L’installation d’un échafaudage traditionnel était impossible en raison de l’emprise au sol limitée et du flux constant de piétons sur le parvis de La Défense. La contrainte temporelle imposait une intervention discrète et rapide pour ne pas perturber l’activité des bureaux.",
+      "solution": "Alco’rope a déployé une équipe de 12 techniciens cordistes certifiés IRATA. Nous avons mis en place un système de levage léger sur le toit-terrasse permettant d’acheminer le matériel sans bloquer les accès au rez-de-chaussée. L’intervention a combiné nettoyage haute pression à température régulée et réfection chirurgicale des mastics d’étanchéité, le tout en évoluant entre 80 et 180 mètres de hauteur.",
+      "galerie": [
+        {
+          "image": "/images/detail-gallery-1.jpg",
+          "alt": "Cordiste en intervention sur la façade vitrée de la tour"
+        },
+        {
+          "image": "/images/detail-gallery-2.jpg",
+          "alt": "Détail du nettoyage haute pression"
+        },
+        {
+          "image": "/images/detail-gallery-3.jpg",
+          "alt": "Réfection des joints d’étanchéité"
+        }
+      ],
+      "resultats": [
+        {
+          "valeur": "-40%",
+          "texte": "Économie budgétaire réalisée par rapport à une solution d’échafaudage lourd."
+        },
+        {
+          "valeur": "0",
+          "texte": "Interruption d’activité pour les locataires de la tour pendant les 4 mois de travaux."
+        },
+        {
+          "valeur": "12k",
+          "texte": "Mètres carrés de façade traités, inspectés et certifiés conformes aux normes CSTB."
+        }
+      ],
+      "maitreOuvrage": "Gestion Immobilière Tertiaire SAS",
+      "duree": "16 semaines (Phase 1 & 2)",
+      "expertises": [
+        "Rope Access (IRATA Level 3)",
+        "Nettoyage Bio-HD 200 bars",
+        "Étanchéité Vitrages Structurels"
+      ],
+      "normes": [
+        "MASE / France",
+        "ISO 45001",
+        "NF EN 795"
+      ]
+    },
+    {
+      "titre": "Infrastructures - Port du Havre",
+      "slug": "infrastructures-port-du-havre",
+      "publie": true,
+      "categorie": "Peinture industrielle",
+      "filtres": [
+        "cordiste",
+        "peinture"
+      ],
+      "resume": "",
+      "image": "/images/project-havre.jpg",
+      "surtitre": "",
+      "titreDetail": "",
+      "imageDetail": "",
+      "stats": [],
+      "defi": "",
+      "solution": "",
+      "galerie": [],
+      "resultats": [],
+      "maitreOuvrage": "",
+      "duree": "",
+      "expertises": [],
+      "normes": []
+    }
+  ]
+}

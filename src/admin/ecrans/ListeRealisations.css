@@ -1,0 +1,110 @@
+.realisations-admin__liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.realisations-admin__ligne {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 14px 10px 10px;
+  border: 1px solid var(--admin-bordure);
+  border-radius: 12px;
+  background-color: var(--admin-surface);
+}
+
+.realisations-admin__vignette {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--admin-fond);
+  color: var(--admin-discret);
+}
+
+.realisations-admin__vignette img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.realisations-admin__infos {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.realisations-admin__titre {
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.realisations-admin__titre:hover {
+  color: var(--color-brown);
+}
+
+.realisations-admin__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 0.8125rem;
+  color: var(--admin-discret);
+}
+
+.realisations-admin__statut {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: var(--admin-fond);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.realisations-admin__statut--publie {
+  background-color: #dcfce7;
+  color: var(--admin-succes);
+}
+
+.realisations-admin__modifie {
+  font-weight: 600;
+  color: var(--color-brown);
+}
+
+.realisations-admin__actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.realisations-admin__vide {
+  color: var(--admin-discret);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .realisations-admin__ligne {
+    flex-wrap: wrap;
+  }
+
+  .realisations-admin__vignette {
+    width: 84px;
+    height: 56px;
+  }
+
+  .realisations-admin__actions {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.admin-connexion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+  background-color: var(--color-navy);
+  background-image: radial-gradient(rgba(255, 140, 0, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.admin-connexion__carte {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 380px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--admin-surface);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.admin-connexion__logo {
+  width: 72px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.admin-connexion__titre {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.admin-connexion__texte {
+  margin-top: -10px;
+  color: var(--admin-discret);
+}
+
+.admin-connexion__bouton {
+  margin-top: 4px;
+  padding: 11px 16px;
+}

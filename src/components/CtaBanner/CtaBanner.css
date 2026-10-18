@@ -1,0 +1,107 @@
+.cta-banner {
+  position: relative;
+  padding-block: var(--section-padding);
+  background-color: var(--color-surface-alt);
+  overflow: hidden;
+}
+
+/* Bande décorative à droite */
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 22%;
+  background-color: var(--color-surface-blue);
+}
+
+.cta-banner__inner {
+  position: relative;
+}
+
+.cta-banner__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 80px;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.cta-banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 672px;
+}
+
+.cta-banner__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-display-md);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+.cta-banner__text {
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: var(--color-text);
+}
+
+.cta-banner__actions {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 310px;
+}
+
+.cta-banner__phone {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  transition: color 0.2s ease;
+}
+
+.cta-banner__phone:hover {
+  color: var(--color-brown);
+}
+
+@media (max-width: 1024px) {
+  .cta-banner__card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px;
+  }
+
+  .cta-banner__actions {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-banner__card {
+    padding: 32px 24px;
+    gap: 32px;
+  }
+
+  .cta-banner__text {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .cta-banner__actions {
+    max-width: none;
+  }
+}

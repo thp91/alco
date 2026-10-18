@@ -1,0 +1,51 @@
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-heading--center {
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading--left {
+  align-items: flex-start;
+}
+
+.section-heading__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+.section-heading--small .section-heading__title {
+  font-size: var(--fs-h2-sm);
+  line-height: 1.11;
+  letter-spacing: -0.025em;
+}
+
+.section-heading__subtitle {
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.section-heading__bar {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-orange);
+}
+
+.section-heading--left.section-heading--small .section-heading__bar {
+  width: 96px;
+}
+
+/* Le sous-titre de la FAQ se place sous le titre, sans barre */
+.section-heading--no-bar .section-heading__bar {
+  display: none;
+}
